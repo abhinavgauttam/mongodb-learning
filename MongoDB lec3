@@ -1,0 +1,799 @@
+Microsoft Windows [Version 10.0.26200.9168]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa0ff2d64457da1e22c2eaa
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+Error: queryTxt ECONNREFUSED cluster0.xrs2dqk.mongodb.net
+
+C:\Users\abhin>use ecomDB
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>use ecommDB
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>use ecomDB
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>use FirstDB
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa105bde247bf873de9f55e
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.32 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-xcy14h-shard-0 [primary] test> use ecommDB
+switched to db ecommDB
+Atlas atlas-xcy14h-shard-0 [primary] ecommDB> show collection
+MongoshInvalidInputError: [COMMON-10001] 'collection' is not a valid argument for "show".
+Atlas atlas-xcy14h-shard-0 [primary] ecommDB> show collections
+
+Atlas atlas-xcy14h-shard-0 [primary] ecommDB> use FirstDB
+switched to db FirstDB
+Atlas atlas-xcy14h-shard-0 [primary] FirstDB> show collections
+Sample_One
+students
+Atlas atlas-xcy14h-shard-0 [primary] FirstDB> use ecomdb
+switched to db ecomdb
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> use ecomDB
+switched to db ecomDB
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.createCollection("aggex")
+MongoServerError[DatabaseDifferCase]: db already exists with different case already have: [ecomdb] trying to create [ecomDB]
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.createCollection("aggex")
+MongoServerError[DatabaseDifferCase]: db already exists with different case already have: [ecomdb] trying to create [ecomDB]
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> use ecomdb
+switched to db ecomdb
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.createCollection("aggex")
+{ ok: 1 }
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> show collections
+aggex
+products
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.insertMany([
+|     {
+|         product: "Laptop",
+|         category: "Electronics",
+|         price: 60000,
+|         quantity: 2,
+|         brand: "Dell"
+|     },
+|     {
+|         product: "Mobile",
+|         category: "Electronics",
+|         price: 30000,
+|         quantity: 5,
+|         brand: "Samsung"
+|     },
+|     {
+|         product: "Headphones",
+|         category: "Electronics",
+|         price: 3000,
+|         quantity: 10,
+|         brand: "Sony"
+|     },
+|     {
+|         product: "T-Shirt",
+|         category: "Clothing",
+|         price: 1500,
+|         quantity: 20,
+|         brand: "Nike"
+|     },
+|     {
+|         product: "Jeans",
+|         category: "Clothing",
+|         price: 2500,
+|         quantity: 15,
+|         brand: "Levis"
+|     },
+|     {
+|         product: "Book",
+|         category: "Books",
+|         price: 500,
+|         quantity: 50,
+|         brand: "Penguin"
+|     },
+|     {
+|         product: "Smart Watch",
+|         category: "Electronics",
+|         price: 15000,
+|         quantity: 8,
+|         brand: "Samsung"
+|     },
+|     {
+|         product: "Shoes",
+|         category: "Footwear",
+|         price: 4000,
+|         quantity: 12,
+|         brand: "Adidas"
+|     }
+| ])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6aa10be5e247bf873de9f55f'),
+    '1': ObjectId('6aa10be5e247bf873de9f560'),
+    '2': ObjectId('6aa10be5e247bf873de9f561'),
+    '3': ObjectId('6aa10be5e247bf873de9f562'),
+    '4': ObjectId('6aa10be5e247bf873de9f563'),
+    '5': ObjectId('6aa10be5e247bf873de9f564'),
+    '6': ObjectId('6aa10be5e247bf873de9f565'),
+    '7': ObjectId('6aa10be5e247bf873de9f566')
+  }
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.find()
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f562'),
+    product: 'T-Shirt',
+    category: 'Clothing',
+    price: 1500,
+    quantity: 20,
+    brand: 'Nike'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f563'),
+    product: 'Jeans',
+    category: 'Clothing',
+    price: 2500,
+    quantity: 15,
+    brand: 'Levis'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f564'),
+    product: 'Book',
+    category: 'Books',
+    price: 500,
+    quantity: 50,
+    brand: 'Penguin'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f566'),
+    product: 'Shoes',
+    category: 'Footwear',
+    price: 4000,
+    quantity: 12,
+    brand: 'Adidas'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     { stage1 },
+|     { stage2 },
+|     { stage3 }
+| ])
+ReferenceError: stage1 is not defined
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $match: {
+|             category: "Electronics"
+|         }
+|     }
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $project: {
+|             product: 1,
+|             price: 1
+|         }
+|     }
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    price: 60000
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    price: 30000
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    price: 3000
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f562'),
+    product: 'T-Shirt',
+    price: 1500
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f563'),
+    product: 'Jeans',
+    price: 2500
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f564'),
+    product: 'Book',
+    price: 500
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    price: 15000
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f566'),
+    product: 'Shoes',
+    price: 4000
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $project: {
+|             _id: 0,
+|             product: 1,
+|             price: 1
+|         }
+|     }
+| ])
+[
+  { product: 'Laptop', price: 60000 },
+  { product: 'Mobile', price: 30000 },
+  { product: 'Headphones', price: 3000 },
+  { product: 'T-Shirt', price: 1500 },
+  { product: 'Jeans', price: 2500 },
+  { product: 'Book', price: 500 },
+  { product: 'Smart Watch', price: 15000 },
+  { product: 'Shoes', price: 4000 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $project: {
+|             _id: 0,
+|             product: 1,
+|             category: 1,
+|             price: 1,
+|             quantity: 1,
+|
+|             totalSales: {
+|                 $multiply: ["$price", "$quantity"]
+|             }
+|         }
+|     }
+| ])
+[
+  {
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    totalSales: 120000
+  },
+  {
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    totalSales: 150000
+  },
+  {
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    totalSales: 30000
+  },
+  {
+    product: 'T-Shirt',
+    category: 'Clothing',
+    price: 1500,
+    quantity: 20,
+    totalSales: 30000
+  },
+  {
+    product: 'Jeans',
+    category: 'Clothing',
+    price: 2500,
+    quantity: 15,
+    totalSales: 37500
+  },
+  {
+    product: 'Book',
+    category: 'Books',
+    price: 500,
+    quantity: 50,
+    totalSales: 25000
+  },
+  {
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    totalSales: 120000
+  },
+  {
+    product: 'Shoes',
+    category: 'Footwear',
+    price: 4000,
+    quantity: 12,
+    totalSales: 48000
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|             totalProducts: {
+|                 $sum: 1
+|             }
+|         }
+|     }
+| ])
+[
+  { _id: 'Footwear', totalProducts: 1 },
+  { _id: 'Electronics', totalProducts: 4 },
+  { _id: 'Clothing', totalProducts: 2 },
+  { _id: 'Books', totalProducts: 1 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|
+|             averagePrice: {
+|                 $avg: "$price"
+|             }
+|         }
+|     }
+| ])
+[
+  { _id: 'Clothing', averagePrice: 2000 },
+  { _id: 'Electronics', averagePrice: 27000 },
+  { _id: 'Books', averagePrice: 500 },
+  { _id: 'Footwear', averagePrice: 4000 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|
+|             totalQuantity: {
+|                 $sum: "$quantity"
+|             }
+|         }
+|     }
+| ])
+[
+  { _id: 'Footwear', totalQuantity: 12 },
+  { _id: 'Books', totalQuantity: 50 },
+  { _id: 'Electronics', totalQuantity: 25 },
+  { _id: 'Clothing', totalQuantity: 35 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|
+|             highestPrice: {
+|                 $max: "$price"
+|             }
+|         }
+|     }
+| ])
+[
+  { _id: 'Footwear', highestPrice: 4000 },
+  { _id: 'Books', highestPrice: 500 },
+  { _id: 'Clothing', highestPrice: 2500 },
+  { _id: 'Electronics', highestPrice: 60000 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $group: {
+|             _id: "$category",
+|
+|             lowestPrice: {
+|                 $min: "$price"
+|             }
+|         }
+|     }
+| ])
+[
+  { _id: 'Clothing', lowestPrice: 1500 },
+  { _id: 'Electronics', lowestPrice: 3000 },
+  { _id: 'Books', lowestPrice: 500 },
+  { _id: 'Footwear', lowestPrice: 4000 }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $sort: {
+|             price: 1
+|         }
+|     }
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f564'),
+    product: 'Book',
+    category: 'Books',
+    price: 500,
+    quantity: 50,
+    brand: 'Penguin'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f562'),
+    product: 'T-Shirt',
+    category: 'Clothing',
+    price: 1500,
+    quantity: 20,
+    brand: 'Nike'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f563'),
+    product: 'Jeans',
+    category: 'Clothing',
+    price: 2500,
+    quantity: 15,
+    brand: 'Levis'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f566'),
+    product: 'Shoes',
+    category: 'Footwear',
+    price: 4000,
+    quantity: 12,
+    brand: 'Adidas'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $sort: {
+|             price: -1
+|         }
+|     }
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f566'),
+    product: 'Shoes',
+    category: 'Footwear',
+    price: 4000,
+    quantity: 12,
+    brand: 'Adidas'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f563'),
+    product: 'Jeans',
+    category: 'Clothing',
+    price: 2500,
+    quantity: 15,
+    brand: 'Levis'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f562'),
+    product: 'T-Shirt',
+    category: 'Clothing',
+    price: 1500,
+    quantity: 20,
+    brand: 'Nike'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f564'),
+    product: 'Book',
+    category: 'Books',
+    price: 500,
+    quantity: 50,
+    brand: 'Penguin'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|     {
+|         $limit: 3
+|     }
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|
+|     {
+|         $sort: {
+|             price: -1
+|         }
+|     },
+|
+|     {
+|         $limit: 3
+|     }
+|
+| ])
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|
+|     {
+|         $match: {
+|             category: "Electronics"
+|         }
+|     },
+|
+|     {
+|         $project: {
+|             _id: 0,
+|             product: 1,
+|             brand: 1,
+|             price: 1,
+|             quantity: 1,
+|
+|             totalSales: {
+|                 $multiply: ["$price", "$quantity"]
+|             }
+|         }
+|     },
+|
+|     {
+|         $sort: {
+|             totalSales: -1
+|         }
+|     },
+|
+|     {
+|         $limit: 3
+|     }
+|
+| ])
+[
+  {
+    product: 'Mobile',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung',
+    totalSales: 150000
+  },
+  {
+    product: 'Smart Watch',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung',
+    totalSales: 120000
+  },
+  {
+    product: 'Laptop',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell',
+    totalSales: 120000
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.aggregate([
+|
+|     {
+|         $match: {
+|             price: {
+|                 $gt: 1000
+|             }
+|         }
+|     },
+|
+|     {
+|         $group: {
+|             _id: "$category",
+|
+|             totalProducts: {
+|                 $sum: 1
+|             },
+|
+|             totalQuantity: {
+|                 $sum: "$quantity"
+|             },
+|
+|             averagePrice: {
+|                 $avg: "$price"
+|             }
+|         }
+|     },
+|
+|     {
+|         $sort: {
+|             totalQuantity: -1
+|         }
+|     }
+|
+| ])
+[
+  {
+    _id: 'Clothing',
+    totalProducts: 2,
+    totalQuantity: 35,
+    averagePrice: 2000
+  },
+  {
+    _id: 'Electronics',
+    totalProducts: 4,
+    totalQuantity: 25,
+    averagePrice: 27000
+  },
+  {
+    _id: 'Footwear',
+    totalProducts: 1,
+    totalQuantity: 12,
+    averagePrice: 4000
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb>
