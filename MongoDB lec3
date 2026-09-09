@@ -40,6 +40,216 @@ Atlas atlas-xcy14h-shard-0 [primary] ecommDB> show collections
 
 Atlas atlas-xcy14h-shard-0 [primary] ecommDB> use FirstDB
 switched to db FirstDB
+
+#crud Operators:
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.find()
+[
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f55f'),
+    product: 'Laptop',
+    category: 'Electronics',
+    price: 60000,
+    quantity: 2,
+    brand: 'Dell'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f560'),
+    product: 'Mobile',
+    category: 'Electronics',
+    price: 30000,
+    quantity: 5,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f561'),
+    product: 'Headphones',
+    category: 'Electronics',
+    price: 3000,
+    quantity: 10,
+    brand: 'Sony'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f562'),
+    product: 'T-Shirt',
+    category: 'Clothing',
+    price: 1500,
+    quantity: 20,
+    brand: 'Nike'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f563'),
+    product: 'Jeans',
+    category: 'Clothing',
+    price: 2500,
+    quantity: 15,
+    brand: 'Levis'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f564'),
+    product: 'Book',
+    category: 'Books',
+    price: 500,
+    quantity: 50,
+    brand: 'Penguin'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f565'),
+    product: 'Smart Watch',
+    category: 'Electronics',
+    price: 15000,
+    quantity: 8,
+    brand: 'Samsung'
+  },
+  {
+    _id: ObjectId('6aa10be5e247bf873de9f566'),
+    product: 'Shoes',
+    category: 'Footwear',
+    price: 4000,
+    quantity: 12,
+    brand: 'Adidas'
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $set: {
+|             price: 65000
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $inc: {
+|             price: 5000
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $inc: {
+|             quantity: -1
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $unset: {
+|             discount: ""
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $set: {
+|             features: ["16GB RAM", "512GB SSD"]
+|         }
+|     }
+| )
+
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb>
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb>
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $push: {
+|             features: "Intel Processor"
+|         }
+|     }
+| )db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $addToSet: {
+|             features: "Touchscreen"
+|         }
+|     }
+| )
+Uncaught:
+SyntaxError: Missing semicolon. (8:1)
+
+   6 |         }
+   7 |     }
+>  8 | )db.aggex.updateOne(
+     |  ^
+   9 |     { product: "Laptop" },
+  10 |     {
+  11 |         $addToSet: {
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $addToSet: {
+|             features: "Touchscreen"
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.aggex.updateOne(
+|     { product: "Laptop" },
+|     {
+|         $addToSet: {
+|             features: "Touchscreen"
+|         }
+|     }
+| )
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb>
+
+
 Atlas atlas-xcy14h-shard-0 [primary] FirstDB> show collections
 Sample_One
 students
