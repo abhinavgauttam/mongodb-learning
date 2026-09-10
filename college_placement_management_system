@@ -1,0 +1,3057 @@
+Microsoft Windows [Version 10.0.26200.9445]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa251a3d3016cc7ee758ec2
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.32 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-xcy14h-shard-0 [primary] test> use pce
+switched to db pce
+Atlas atlas-xcy14h-shard-0 [primary] pce> db
+pce
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.createCollection("students")
+{ ok: 1 }
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.createCollection("job_drives")
+{ ok: 1 }
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.createCollection("companies")
+{ ok: 1 }
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.createCollection("applications")
+{ ok: 1 }
+Atlas atlas-xcy14h-shard-0 [primary] pce> show collections
+applications
+companies
+job_drives
+students
+Atlas atlas-xcy14h-shard-0 [primary] pce>
+|
+| db.students.insertMany(
+| [
+|   {
+|     "studentId": "STU001",
+|     "name": "Aarav Sharma",
+|     "email": "aarav.sharma@example.com",
+|     "phone": "9876500001",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.0,
+|     "skills": [
+|       "Java",
+|       "MongoDB",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 87,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU002",
+|     "name": "Priya Reddy",
+|     "email": "priya.reddy@example.com",
+|     "phone": "9876500002",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.1,
+|     "skills": [
+|       "Python",
+|       "Machine Learning",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Machine Learning"
+|     ],
+|     "address": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "education": {
+|       "tenthPercentage": 94,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU003",
+|     "name": "Rahul Verma",
+|     "email": "rahul.verma@example.com",
+|     "phone": "9876500003",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.2,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Delhi",
+|       "state": "Delhi"
+|     },
+|     "education": {
+|       "tenthPercentage": 84,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU004",
+|     "name": "Sneha Patel",
+|     "email": "sneha.patel@example.com",
+|     "phone": "9876500004",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 8.8,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Ahmedabad",
+|       "state": "Gujarat"
+|     },
+|     "education": {
+|       "tenthPercentage": 91,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU005",
+|     "name": "Karthik Rao",
+|     "email": "karthik.rao@example.com",
+|     "phone": "9876500005",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.4,
+|     "skills": [
+|       "JavaScript",
+|       "React",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Web Development"
+|     ],
+|     "address": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "education": {
+|       "tenthPercentage": 81,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU006",
+|     "name": "Ananya Singh",
+|     "email": "ananya.singh@example.com",
+|     "phone": "9876500006",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.0,
+|     "skills": [
+|       "Python",
+|       "Django",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Django Development"
+|     ],
+|     "address": {
+|       "city": "Lucknow",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 88,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU007",
+|     "name": "Vikram Kumar",
+|     "email": "vikram.kumar@example.com",
+|     "phone": "9876500007",
+|     "department": "EEE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.5,
+|     "skills": [
+|       "Java",
+|       "DSA",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Chennai",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 95,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU008",
+|     "name": "Meera Nair",
+|     "email": "meera.nair@example.com",
+|     "phone": "9876500008",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 8.1,
+|     "skills": [
+|       "Python",
+|       "Power BI",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Data Analytics"
+|     ],
+|     "address": {
+|       "city": "Kochi",
+|       "state": "Kerala"
+|     },
+|     "education": {
+|       "tenthPercentage": 85,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU009",
+|     "name": "Arjun Mehta",
+|     "email": "arjun.mehta@example.com",
+|     "phone": "9876500009",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.7,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "Java"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "education": {
+|       "tenthPercentage": 92,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU010",
+|     "name": "Divya Iyer",
+|     "email": "divya.iyer@example.com",
+|     "phone": "9876500010",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.3,
+|     "skills": [
+|       "Java",
+|       "Python",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Python Programming"
+|     ],
+|     "address": {
+|       "city": "Coimbatore",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 82,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU011",
+|     "name": "Rohan Gupta",
+|     "email": "rohan.gupta@example.com",
+|     "phone": "9876500011",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 6.8,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Noida",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 89,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU012",
+|     "name": "Ishita Das",
+|     "email": "ishita.das@example.com",
+|     "phone": "9876500012",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.1,
+|     "skills": [
+|       "Python",
+|       "AI",
+|       "Machine Learning"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Artificial Intelligence"
+|     ],
+|     "address": {
+|       "city": "Kolkata",
+|       "state": "West Bengal"
+|     },
+|     "education": {
+|       "tenthPercentage": 96,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU013",
+|     "name": "Manoj Reddy",
+|     "email": "manoj.reddy@example.com",
+|     "phone": "9876500013",
+|     "department": "ME",
+|     "graduationYear": 2027,
+|     "cgpa": 8.0,
+|     "skills": [
+|       "C++",
+|       "Networking",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Networking Basics"
+|     ],
+|     "address": {
+|       "city": "Indore",
+|       "state": "Madhya Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 86,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU014",
+|     "name": "Neha Joshi",
+|     "email": "neha.joshi@example.com",
+|     "phone": "9876500014",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.6,
+|     "skills": [
+|       "Java",
+|       "Cloud",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Cloud Fundamentals"
+|     ],
+|     "address": {
+|       "city": "Chandigarh",
+|       "state": "Chandigarh"
+|     },
+|     "education": {
+|       "tenthPercentage": 93,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU015",
+|     "name": "Aditya Kapoor",
+|     "email": "aditya.kapoor@example.com",
+|     "phone": "9876500015",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.2,
+|     "skills": [
+|       "SQL",
+|       "MongoDB",
+|       "Python"
+|     ],
+|     "certifications": [
+|       "SQL Fundamentals",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 83,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU016",
+|     "name": "Kavya Sharma",
+|     "email": "kavya.sharma@example.com",
+|     "phone": "9876500016",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 6.7,
+|     "skills": [
+|       "Java",
+|       "MongoDB",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 90,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU017",
+|     "name": "Yash Agarwal",
+|     "email": "yash.agarwal@example.com",
+|     "phone": "9876500017",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.3,
+|     "skills": [
+|       "Python",
+|       "Machine Learning",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Machine Learning"
+|     ],
+|     "address": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "education": {
+|       "tenthPercentage": 80,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU018",
+|     "name": "Pooja Mehta",
+|     "email": "pooja.mehta@example.com",
+|     "phone": "9876500018",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.9,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Delhi",
+|       "state": "Delhi"
+|     },
+|     "education": {
+|       "tenthPercentage": 87,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU019",
+|     "name": "Ritik Jain",
+|     "email": "ritik.jain@example.com",
+|     "phone": "9876500019",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.5,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Ahmedabad",
+|       "state": "Gujarat"
+|     },
+|     "education": {
+|       "tenthPercentage": 94,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU020",
+|     "name": "Nisha Verma",
+|     "email": "nisha.verma@example.com",
+|     "phone": "9876500020",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 9.1,
+|     "skills": [
+|       "JavaScript",
+|       "React",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Web Development"
+|     ],
+|     "address": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "education": {
+|       "tenthPercentage": 84,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU021",
+|     "name": "Siddharth Singh",
+|     "email": "siddharth.singh@example.com",
+|     "phone": "9876500021",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 6.6,
+|     "skills": [
+|       "Python",
+|       "Django",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Django Development"
+|     ],
+|     "address": {
+|       "city": "Lucknow",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 91,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU022",
+|     "name": "Tanvi Gupta",
+|     "email": "tanvi.gupta@example.com",
+|     "phone": "9876500022",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.2,
+|     "skills": [
+|       "Java",
+|       "DSA",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Chennai",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 81,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU023",
+|     "name": "Harsh Patel",
+|     "email": "harsh.patel@example.com",
+|     "phone": "9876500023",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 7.8,
+|     "skills": [
+|       "Python",
+|       "Power BI",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Data Analytics"
+|     ],
+|     "address": {
+|       "city": "Kochi",
+|       "state": "Kerala"
+|     },
+|     "education": {
+|       "tenthPercentage": 88,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU024",
+|     "name": "Aditi Sharma",
+|     "email": "aditi.sharma@example.com",
+|     "phone": "9876500024",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.3,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "Java"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "education": {
+|       "tenthPercentage": 95,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU025",
+|     "name": "Mohit Kumar",
+|     "email": "mohit.kumar@example.com",
+|     "phone": "9876500025",
+|     "department": "ME",
+|     "graduationYear": 2027,
+|     "cgpa": 9.0,
+|     "skills": [
+|       "Java",
+|       "Python",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Python Programming"
+|     ],
+|     "address": {
+|       "city": "Coimbatore",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 85,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU026",
+|     "name": "Riya Jain",
+|     "email": "riya.jain@example.com",
+|     "phone": "9876500026",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 6.5,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Noida",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 92,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU027",
+|     "name": "Akash Yadav",
+|     "email": "akash.yadav@example.com",
+|     "phone": "9876500027",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.1,
+|     "skills": [
+|       "Python",
+|       "AI",
+|       "Machine Learning"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Artificial Intelligence"
+|     ],
+|     "address": {
+|       "city": "Kolkata",
+|       "state": "West Bengal"
+|     },
+|     "education": {
+|       "tenthPercentage": 82,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU028",
+|     "name": "Simran Kaur",
+|     "email": "simran.kaur@example.com",
+|     "phone": "9876500028",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 7.7,
+|     "skills": [
+|       "C++",
+|       "Networking",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Networking Basics"
+|     ],
+|     "address": {
+|       "city": "Indore",
+|       "state": "Madhya Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 89,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU029",
+|     "name": "Devansh Gupta",
+|     "email": "devansh.gupta@example.com",
+|     "phone": "9876500029",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.3,
+|     "skills": [
+|       "Java",
+|       "Cloud",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Cloud Fundamentals"
+|     ],
+|     "address": {
+|       "city": "Chandigarh",
+|       "state": "Chandigarh"
+|     },
+|     "education": {
+|       "tenthPercentage": 96,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU030",
+|     "name": "Muskan Sharma",
+|     "email": "muskan.sharma@example.com",
+|     "phone": "9876500030",
+|     "department": "EEE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.9,
+|     "skills": [
+|       "SQL",
+|       "MongoDB",
+|       "Python"
+|     ],
+|     "certifications": [
+|       "SQL Fundamentals",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 86,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU031",
+|     "name": "Ayush Verma",
+|     "email": "ayush.verma@example.com",
+|     "phone": "9876500031",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 6.4,
+|     "skills": [
+|       "Java",
+|       "MongoDB",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 93,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU032",
+|     "name": "Sakshi Jain",
+|     "email": "sakshi.jain@example.com",
+|     "phone": "9876500032",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 7.0,
+|     "skills": [
+|       "Python",
+|       "Machine Learning",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Machine Learning"
+|     ],
+|     "address": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "education": {
+|       "tenthPercentage": 83,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU033",
+|     "name": "Nitin Sharma",
+|     "email": "nitin.sharma@example.com",
+|     "phone": "9876500033",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.6,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Delhi",
+|       "state": "Delhi"
+|     },
+|     "education": {
+|       "tenthPercentage": 90,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU034",
+|     "name": "Palak Gupta",
+|     "email": "palak.gupta@example.com",
+|     "phone": "9876500034",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.2,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Ahmedabad",
+|       "state": "Gujarat"
+|     },
+|     "education": {
+|       "tenthPercentage": 80,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU035",
+|     "name": "Shubham Mehta",
+|     "email": "shubham.mehta@example.com",
+|     "phone": "9876500035",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 8.8,
+|     "skills": [
+|       "JavaScript",
+|       "React",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Web Development"
+|     ],
+|     "address": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "education": {
+|       "tenthPercentage": 87,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU036",
+|     "name": "Khushi Singh",
+|     "email": "khushi.singh@example.com",
+|     "phone": "9876500036",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.0,
+|     "skills": [
+|       "Python",
+|       "Django",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Django Development"
+|     ],
+|     "address": {
+|       "city": "Lucknow",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 94,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU037",
+|     "name": "Rajat Kumar",
+|     "email": "rajat.kumar@example.com",
+|     "phone": "9876500037",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 6.9,
+|     "skills": [
+|       "Java",
+|       "DSA",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Chennai",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 84,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU038",
+|     "name": "Isha Sharma",
+|     "email": "isha.sharma@example.com",
+|     "phone": "9876500038",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 7.5,
+|     "skills": [
+|       "Python",
+|       "Power BI",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Data Analytics"
+|     ],
+|     "address": {
+|       "city": "Kochi",
+|       "state": "Kerala"
+|     },
+|     "education": {
+|       "tenthPercentage": 91,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU039",
+|     "name": "Ankit Jain",
+|     "email": "ankit.jain@example.com",
+|     "phone": "9876500039",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.1,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "Java"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "education": {
+|       "tenthPercentage": 81,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU040",
+|     "name": "Vaishnavi Rao",
+|     "email": "vaishnavi.rao@example.com",
+|     "phone": "9876500040",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.9,
+|     "skills": [
+|       "Java",
+|       "Python",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Python Programming"
+|     ],
+|     "address": {
+|       "city": "Coimbatore",
+|       "state": "Tamil Nadu"
+|     },
+|     "education": {
+|       "tenthPercentage": 88,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU041",
+|     "name": "Rishabh Gupta",
+|     "email": "rishabh.gupta@example.com",
+|     "phone": "9876500041",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 9.3,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Noida",
+|       "state": "Uttar Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 95,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU042",
+|     "name": "Tanya Verma",
+|     "email": "tanya.verma@example.com",
+|     "phone": "9876500042",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 6.8,
+|     "skills": [
+|       "Python",
+|       "AI",
+|       "Machine Learning"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Artificial Intelligence"
+|     ],
+|     "address": {
+|       "city": "Kolkata",
+|       "state": "West Bengal"
+|     },
+|     "education": {
+|       "tenthPercentage": 85,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU043",
+|     "name": "Abhishek Sharma",
+|     "email": "abhishek.sharma@example.com",
+|     "phone": "9876500043",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.4,
+|     "skills": [
+|       "C++",
+|       "Networking",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Networking Basics"
+|     ],
+|     "address": {
+|       "city": "Indore",
+|       "state": "Madhya Pradesh"
+|     },
+|     "education": {
+|       "tenthPercentage": 92,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU044",
+|     "name": "Sanya Kapoor",
+|     "email": "sanya.kapoor@example.com",
+|     "phone": "9876500044",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 8.0,
+|     "skills": [
+|       "Java",
+|       "Cloud",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Cloud Fundamentals"
+|     ],
+|     "address": {
+|       "city": "Chandigarh",
+|       "state": "Chandigarh"
+|     },
+|     "education": {
+|       "tenthPercentage": 82,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU045",
+|     "name": "Kunal Mehta",
+|     "email": "kunal.mehta@example.com",
+|     "phone": "9876500045",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 8.6,
+|     "skills": [
+|       "SQL",
+|       "MongoDB",
+|       "Python"
+|     ],
+|     "certifications": [
+|       "SQL Fundamentals",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 89,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU046",
+|     "name": "Nandini Joshi",
+|     "email": "nandini.joshi@example.com",
+|     "phone": "9876500046",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 9.2,
+|     "skills": [
+|       "Java",
+|       "MongoDB",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "MongoDB Basics"
+|     ],
+|     "address": {
+|       "city": "Jaipur",
+|       "state": "Rajasthan"
+|     },
+|     "education": {
+|       "tenthPercentage": 96,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU047",
+|     "name": "Varun Singh",
+|     "email": "varun.singh@example.com",
+|     "phone": "9876500047",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 6.7,
+|     "skills": [
+|       "Python",
+|       "Machine Learning",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Python Programming",
+|       "Machine Learning"
+|     ],
+|     "address": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "education": {
+|       "tenthPercentage": 86,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU048",
+|     "name": "Prachi Gupta",
+|     "email": "prachi.gupta@example.com",
+|     "phone": "9876500048",
+|     "department": "CSE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.3,
+|     "skills": [
+|       "C++",
+|       "DSA",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "C++ Programming",
+|       "Data Structures"
+|     ],
+|     "address": {
+|       "city": "Delhi",
+|       "state": "Delhi"
+|     },
+|     "education": {
+|       "tenthPercentage": 93,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU049",
+|     "name": "Aman Choudhary",
+|     "email": "aman.choudhary@example.com",
+|     "phone": "9876500049",
+|     "department": "ECE",
+|     "graduationYear": 2027,
+|     "cgpa": 7.9,
+|     "skills": [
+|       "Java",
+|       "Spring",
+|       "SQL"
+|     ],
+|     "certifications": [
+|       "Java Programming",
+|       "Spring Framework"
+|     ],
+|     "address": {
+|       "city": "Ahmedabad",
+|       "state": "Gujarat"
+|     },
+|     "education": {
+|       "tenthPercentage": 83,
+|       "twelfthPercentage": 87
+|     },
+|     "placementStatus": "Not Placed"
+|   },
+|   {
+|     "studentId": "STU050",
+|     "name": "Shruti Sharma",
+|     "email": "shruti.sharma@example.com",
+|     "phone": "9876500050",
+|     "department": "IT",
+|     "graduationYear": 2027,
+|     "cgpa": 8.5,
+|     "skills": [
+|       "JavaScript",
+|       "React",
+|       "MongoDB"
+|     ],
+|     "certifications": [
+|       "Web Development"
+|     ],
+|     "address": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "education": {
+|       "tenthPercentage": 90,
+|       "twelfthPercentage": 78
+|     },
+|     "placementStatus": "Not Placed"
+|   }
+| ]
+| );
+|
+| db.companies.insertMany(
+| [
+|   {
+|     "companyId": "COMP001",
+|     "companyName": "TCS",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Mumbai",
+|       "state": "Maharashtra"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "System Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP002",
+|     "companyName": "Infosys",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "hiringRoles": [
+|       "Systems Engineer",
+|       "Technology Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP003",
+|     "companyName": "Wipro",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "hiringRoles": [
+|       "Project Engineer",
+|       "Software Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 6.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP004",
+|     "companyName": "Accenture",
+|     "industry": "Consulting",
+|     "location": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "hiringRoles": [
+|       "Associate Software Engineer",
+|       "Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP005",
+|     "companyName": "Microsoft",
+|     "industry": "Technology",
+|     "location": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "Cloud Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 8,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP006",
+|     "companyName": "Amazon",
+|     "industry": "E-Commerce",
+|     "location": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "hiringRoles": [
+|       "Software Development Engineer",
+|       "Cloud Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP007",
+|     "companyName": "Google",
+|     "industry": "Technology",
+|     "location": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "Data Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 8.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP008",
+|     "companyName": "IBM",
+|     "industry": "Technology",
+|     "location": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "hiringRoles": [
+|       "Software Developer",
+|       "Data Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP009",
+|     "companyName": "Deloitte",
+|     "industry": "Consulting",
+|     "location": {
+|       "city": "Hyderabad",
+|       "state": "Telangana"
+|     },
+|     "hiringRoles": [
+|       "Analyst",
+|       "Technology Consultant"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP010",
+|     "companyName": "Cognizant",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Chennai",
+|       "state": "Tamil Nadu"
+|     },
+|     "hiringRoles": [
+|       "Programmer Analyst",
+|       "Software Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 6.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP011",
+|     "companyName": "HCLTech",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Noida",
+|       "state": "Uttar Pradesh"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "Technical Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP012",
+|     "companyName": "Capgemini",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 6.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP013",
+|     "companyName": "Tech Mahindra",
+|     "industry": "IT Services",
+|     "location": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "hiringRoles": [
+|       "Software Engineer",
+|       "Network Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 6.5,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP014",
+|     "companyName": "Oracle",
+|     "industry": "Technology",
+|     "location": {
+|       "city": "Bangalore",
+|       "state": "Karnataka"
+|     },
+|     "hiringRoles": [
+|       "Software Developer",
+|       "Database Engineer"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 8,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT"
+|       ]
+|     }
+|   },
+|   {
+|     "companyId": "COMP015",
+|     "companyName": "Accenture",
+|     "industry": "Consulting",
+|     "location": {
+|       "city": "Pune",
+|       "state": "Maharashtra"
+|     },
+|     "hiringRoles": [
+|       "Application Developer",
+|       "Cloud Analyst"
+|     ],
+|     "eligibility": {
+|       "minimumCGPA": 7,
+|       "allowedDepartments": [
+|         "CSE",
+|         "IT",
+|         "ECE"
+|       ]
+|     }
+|   }
+| ]
+| );
+|
+| db.job_drives.insertMany(
+| [
+|   {
+|     "driveId": "DRV001",
+|     "companyId": "COMP001",
+|     "role": "Software Engineer",
+|     "package": {
+|       "ctc": 7,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Java",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-10-05T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV002",
+|     "companyId": "COMP002",
+|     "role": "Systems Engineer",
+|     "package": {
+|       "ctc": 6.5,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Java",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-10-08T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV003",
+|     "companyId": "COMP003",
+|     "role": "Project Engineer",
+|     "package": {
+|       "ctc": 6,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 6.5,
+|     "skillsRequired": [
+|       "C++",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-10-12T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV004",
+|     "companyId": "COMP004",
+|     "role": "Associate Software Engineer",
+|     "package": {
+|       "ctc": 7,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Java",
+|       "Python"
+|     ],
+|     "driveDate": ISODate("2026-10-15T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV005",
+|     "companyId": "COMP005",
+|     "role": "Software Engineer",
+|     "package": {
+|       "ctc": 18,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 8,
+|     "skillsRequired": [
+|       "C++",
+|       "DSA"
+|     ],
+|     "driveDate": ISODate("2026-10-18T00:00:00.000Z"),
+|     "mode": "Online",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV006",
+|     "companyId": "COMP006",
+|     "role": "Software Development Engineer",
+|     "package": {
+|       "ctc": 15,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7.5,
+|     "skillsRequired": [
+|       "Java",
+|       "DSA"
+|     ],
+|     "driveDate": ISODate("2026-10-20T00:00:00.000Z"),
+|     "mode": "Online",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV007",
+|     "companyId": "COMP007",
+|     "role": "Software Engineer",
+|     "package": {
+|       "ctc": 25,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 8.5,
+|     "skillsRequired": [
+|       "Python",
+|       "DSA"
+|     ],
+|     "driveDate": ISODate("2026-10-22T00:00:00.000Z"),
+|     "mode": "Online",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV008",
+|     "companyId": "COMP008",
+|     "role": "Data Analyst",
+|     "package": {
+|       "ctc": 8,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Python",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-10-25T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV009",
+|     "companyId": "COMP009",
+|     "role": "Technology Consultant",
+|     "package": {
+|       "ctc": 9,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7.5,
+|     "skillsRequired": [
+|       "Java",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-10-28T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV010",
+|     "companyId": "COMP010",
+|     "role": "Programmer Analyst",
+|     "package": {
+|       "ctc": 6,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 6.5,
+|     "skillsRequired": [
+|       "Java",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-11-01T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV011",
+|     "companyId": "COMP011",
+|     "role": "Software Engineer",
+|     "package": {
+|       "ctc": 7.5,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Java",
+|       "Spring"
+|     ],
+|     "driveDate": ISODate("2026-11-05T00:00:00.000Z"),
+|     "mode": "Online",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV012",
+|     "companyId": "COMP012",
+|     "role": "Software Engineer",
+|     "package": {
+|       "ctc": 7,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 6.5,
+|     "skillsRequired": [
+|       "Java",
+|       "SQL"
+|     ],
+|     "driveDate": ISODate("2026-11-08T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV013",
+|     "companyId": "COMP013",
+|     "role": "Network Engineer",
+|     "package": {
+|       "ctc": 6.5,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 6.5,
+|     "skillsRequired": [
+|       "C++",
+|       "Networking"
+|     ],
+|     "driveDate": ISODate("2026-11-12T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV014",
+|     "companyId": "COMP014",
+|     "role": "Database Engineer",
+|     "package": {
+|       "ctc": 12,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 8,
+|     "skillsRequired": [
+|       "SQL",
+|       "MongoDB"
+|     ],
+|     "driveDate": ISODate("2026-11-15T00:00:00.000Z"),
+|     "mode": "Online",
+|     "status": "Open"
+|   },
+|   {
+|     "driveId": "DRV015",
+|     "companyId": "COMP015",
+|     "role": "Application Developer",
+|     "package": {
+|       "ctc": 8,
+|       "currency": "LPA"
+|     },
+|     "eligibilityCGPA": 7,
+|     "skillsRequired": [
+|       "Java",
+|       "Cloud"
+|     ],
+|     "driveDate": ISODate("2026-11-18T00:00:00.000Z"),
+|     "mode": "On Campus",
+|     "status": "Open"
+|   }
+| ]
+| );
+|
+| db.applications.insertMany(
+| [
+|   {
+|     "applicationId": "APP001",
+|     "studentId": "STU001",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-02T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP002",
+|     "studentId": "STU001",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-03T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP003",
+|     "studentId": "STU001",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-04T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP004",
+|     "studentId": "STU002",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-05T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP005",
+|     "studentId": "STU002",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-06T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP006",
+|     "studentId": "STU002",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-07T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP007",
+|     "studentId": "STU003",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-08T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP008",
+|     "studentId": "STU003",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-09T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP009",
+|     "studentId": "STU003",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-10T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP010",
+|     "studentId": "STU004",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-11T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP011",
+|     "studentId": "STU004",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-12T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP012",
+|     "studentId": "STU004",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-13T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP013",
+|     "studentId": "STU005",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-14T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP014",
+|     "studentId": "STU005",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-15T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP015",
+|     "studentId": "STU005",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-16T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP016",
+|     "studentId": "STU006",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-17T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP017",
+|     "studentId": "STU006",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-18T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP018",
+|     "studentId": "STU006",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-19T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP019",
+|     "studentId": "STU008",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-20T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP020",
+|     "studentId": "STU008",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-21T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP021",
+|     "studentId": "STU008",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-22T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP022",
+|     "studentId": "STU009",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-23T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP023",
+|     "studentId": "STU009",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-24T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP024",
+|     "studentId": "STU009",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-25T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP025",
+|     "studentId": "STU010",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-26T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP026",
+|     "studentId": "STU010",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-27T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP027",
+|     "studentId": "STU010",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-28T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP028",
+|     "studentId": "STU011",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-01T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP029",
+|     "studentId": "STU011",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-02T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP030",
+|     "studentId": "STU011",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-03T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP031",
+|     "studentId": "STU012",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-04T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP032",
+|     "studentId": "STU012",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-05T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP033",
+|     "studentId": "STU012",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-06T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP034",
+|     "studentId": "STU014",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-07T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP035",
+|     "studentId": "STU014",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-08T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP036",
+|     "studentId": "STU014",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-09T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP037",
+|     "studentId": "STU015",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-10T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP038",
+|     "studentId": "STU015",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-11T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP039",
+|     "studentId": "STU015",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-12T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP040",
+|     "studentId": "STU016",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-13T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP041",
+|     "studentId": "STU016",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-14T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP042",
+|     "studentId": "STU016",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-15T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP043",
+|     "studentId": "STU017",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-16T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP044",
+|     "studentId": "STU017",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-17T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP045",
+|     "studentId": "STU017",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-18T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP046",
+|     "studentId": "STU018",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-19T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP047",
+|     "studentId": "STU018",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-20T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP048",
+|     "studentId": "STU018",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-21T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP049",
+|     "studentId": "STU019",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-22T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP050",
+|     "studentId": "STU019",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-23T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP051",
+|     "studentId": "STU019",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-24T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP052",
+|     "studentId": "STU020",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-25T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP053",
+|     "studentId": "STU020",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-26T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP054",
+|     "studentId": "STU020",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-27T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP055",
+|     "studentId": "STU021",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-28T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP056",
+|     "studentId": "STU021",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-01T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP057",
+|     "studentId": "STU021",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-02T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP058",
+|     "studentId": "STU022",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-03T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP059",
+|     "studentId": "STU022",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-04T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP060",
+|     "studentId": "STU022",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-05T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP061",
+|     "studentId": "STU023",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-06T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP062",
+|     "studentId": "STU023",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-07T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP063",
+|     "studentId": "STU023",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-08T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP064",
+|     "studentId": "STU024",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-09T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP065",
+|     "studentId": "STU024",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-10T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP066",
+|     "studentId": "STU024",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-11T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP067",
+|     "studentId": "STU026",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-12T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP068",
+|     "studentId": "STU026",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-13T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP069",
+|     "studentId": "STU026",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-14T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP070",
+|     "studentId": "STU027",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-15T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP071",
+|     "studentId": "STU027",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-16T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP072",
+|     "studentId": "STU027",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-17T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP073",
+|     "studentId": "STU028",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-18T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP074",
+|     "studentId": "STU028",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-19T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP075",
+|     "studentId": "STU028",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-20T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP076",
+|     "studentId": "STU029",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-21T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP077",
+|     "studentId": "STU029",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-22T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP078",
+|     "studentId": "STU029",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-23T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP079",
+|     "studentId": "STU032",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-24T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP080",
+|     "studentId": "STU032",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-25T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP081",
+|     "studentId": "STU032",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-26T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP082",
+|     "studentId": "STU033",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-27T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP083",
+|     "studentId": "STU033",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-28T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP084",
+|     "studentId": "STU033",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-01T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP085",
+|     "studentId": "STU034",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-02T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP086",
+|     "studentId": "STU034",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-03T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP087",
+|     "studentId": "STU034",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-04T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP088",
+|     "studentId": "STU035",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-05T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP089",
+|     "studentId": "STU035",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-06T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP090",
+|     "studentId": "STU035",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-07T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP091",
+|     "studentId": "STU036",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-08T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP092",
+|     "studentId": "STU036",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-09T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP093",
+|     "studentId": "STU036",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-10T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP094",
+|     "studentId": "STU037",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-11T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP095",
+|     "studentId": "STU037",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-12T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP096",
+|     "studentId": "STU037",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-13T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP097",
+|     "studentId": "STU038",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-14T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP098",
+|     "studentId": "STU038",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-15T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP099",
+|     "studentId": "STU038",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-16T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP100",
+|     "studentId": "STU039",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-17T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP101",
+|     "studentId": "STU039",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-18T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP102",
+|     "studentId": "STU039",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-19T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP103",
+|     "studentId": "STU040",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-20T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP104",
+|     "studentId": "STU040",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-21T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP105",
+|     "studentId": "STU040",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-22T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP106",
+|     "studentId": "STU041",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-23T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP107",
+|     "studentId": "STU041",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-24T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP108",
+|     "studentId": "STU041",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-25T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP109",
+|     "studentId": "STU042",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-26T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP110",
+|     "studentId": "STU042",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-27T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP111",
+|     "studentId": "STU042",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-28T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP112",
+|     "studentId": "STU043",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-01T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP113",
+|     "studentId": "STU043",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-02T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP114",
+|     "studentId": "STU043",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-03T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP115",
+|     "studentId": "STU044",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-04T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP116",
+|     "studentId": "STU044",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-05T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP117",
+|     "studentId": "STU044",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-06T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP118",
+|     "studentId": "STU045",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-07T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP119",
+|     "studentId": "STU045",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-08T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP120",
+|     "studentId": "STU045",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-09T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP121",
+|     "studentId": "STU046",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-10T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP122",
+|     "studentId": "STU046",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-11T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP123",
+|     "studentId": "STU046",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-12T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP124",
+|     "studentId": "STU047",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-13T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP125",
+|     "studentId": "STU047",
+|     "driveId": "DRV010",
+|     "applicationDate": ISODate("2026-09-14T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP126",
+|     "studentId": "STU047",
+|     "driveId": "DRV012",
+|     "applicationDate": ISODate("2026-09-15T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP127",
+|     "studentId": "STU048",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-16T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP128",
+|     "studentId": "STU048",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-17T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP129",
+|     "studentId": "STU048",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-18T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP130",
+|     "studentId": "STU049",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-19T00:00:00.000Z"),
+|     "status": "Selected"
+|   },
+|   {
+|     "applicationId": "APP131",
+|     "studentId": "STU049",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-20T00:00:00.000Z"),
+|     "status": "Rejected"
+|   },
+|   {
+|     "applicationId": "APP132",
+|     "studentId": "STU049",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-21T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP133",
+|     "studentId": "STU050",
+|     "driveId": "DRV001",
+|     "applicationDate": ISODate("2026-09-22T00:00:00.000Z"),
+|     "status": "Shortlisted"
+|   },
+|   {
+|     "applicationId": "APP134",
+|     "studentId": "STU050",
+|     "driveId": "DRV002",
+|     "applicationDate": ISODate("2026-09-23T00:00:00.000Z"),
+|     "status": "Applied"
+|   },
+|   {
+|     "applicationId": "APP135",
+|     "studentId": "STU050",
+|     "driveId": "DRV003",
+|     "applicationDate": ISODate("2026-09-24T00:00:00.000Z"),
+|     "status": "Selected"
+|   }
+| ]
+| );
+|
+|
+|
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6aa25a8bd3016cc7ee758f13'),
+    '1': ObjectId('6aa25a8bd3016cc7ee758f14'),
+    '2': ObjectId('6aa25a8bd3016cc7ee758f15'),
+    '3': ObjectId('6aa25a8bd3016cc7ee758f16'),
+    '4': ObjectId('6aa25a8bd3016cc7ee758f17'),
+    '5': ObjectId('6aa25a8bd3016cc7ee758f18'),
+    '6': ObjectId('6aa25a8bd3016cc7ee758f19'),
+    '7': ObjectId('6aa25a8bd3016cc7ee758f1a'),
+    '8': ObjectId('6aa25a8bd3016cc7ee758f1b'),
+    '9': ObjectId('6aa25a8bd3016cc7ee758f1c'),
+    '10': ObjectId('6aa25a8bd3016cc7ee758f1d'),
+    '11': ObjectId('6aa25a8bd3016cc7ee758f1e'),
+    '12': ObjectId('6aa25a8bd3016cc7ee758f1f'),
+    '13': ObjectId('6aa25a8bd3016cc7ee758f20'),
+    '14': ObjectId('6aa25a8bd3016cc7ee758f21'),
+    '15': ObjectId('6aa25a8bd3016cc7ee758f22'),
+    '16': ObjectId('6aa25a8bd3016cc7ee758f23'),
+    '17': ObjectId('6aa25a8bd3016cc7ee758f24'),
+    '18': ObjectId('6aa25a8bd3016cc7ee758f25'),
+    '19': ObjectId('6aa25a8bd3016cc7ee758f26'),
+    '20': ObjectId('6aa25a8bd3016cc7ee758f27'),
+    '21': ObjectId('6aa25a8bd3016cc7ee758f28'),
+    '22': ObjectId('6aa25a8bd3016cc7ee758f29'),
+    '23': ObjectId('6aa25a8bd3016cc7ee758f2a'),
+    '24': ObjectId('6aa25a8bd3016cc7ee758f2b'),
+    '25': ObjectId('6aa25a8bd3016cc7ee758f2c'),
+    '26': ObjectId('6aa25a8bd3016cc7ee758f2d'),
+    '27': ObjectId('6aa25a8bd3016cc7ee758f2e'),
+    '28': ObjectId('6aa25a8bd3016cc7ee758f2f'),
+    '29': ObjectId('6aa25a8bd3016cc7ee758f30'),
+    '30': ObjectId('6aa25a8bd3016cc7ee758f31'),
+    '31': ObjectId('6aa25a8bd3016cc7ee758f32'),
+    '32': ObjectId('6aa25a8bd3016cc7ee758f33'),
+    '33': ObjectId('6aa25a8bd3016cc7ee758f34'),
+    '34': ObjectId('6aa25a8bd3016cc7ee758f35'),
+    '35': ObjectId('6aa25a8bd3016cc7ee758f36'),
+    '36': ObjectId('6aa25a8bd3016cc7ee758f37'),
+    '37': ObjectId('6aa25a8bd3016cc7ee758f38'),
+    '38': ObjectId('6aa25a8bd3016cc7ee758f39'),
+    '39': ObjectId('6aa25a8bd3016cc7ee758f3a'),
+    '40': ObjectId('6aa25a8bd3016cc7ee758f3b'),
+    '41': ObjectId('6aa25a8bd3016cc7ee758f3c'),
+    '42': ObjectId('6aa25a8bd3016cc7ee758f3d'),
+    '43': ObjectId('6aa25a8bd3016cc7ee758f3e'),
+    '44': ObjectId('6aa25a8bd3016cc7ee758f3f'),
+    '45': ObjectId('6aa25a8bd3016cc7ee758f40'),
+    '46': ObjectId('6aa25a8bd3016cc7ee758f41'),
+    '47': ObjectId('6aa25a8bd3016cc7ee758f42'),
+    '48': ObjectId('6aa25a8bd3016cc7ee758f43'),
+    '49': ObjectId('6aa25a8bd3016cc7ee758f44'),
+    '50': ObjectId('6aa25a8bd3016cc7ee758f45'),
+    '51': ObjectId('6aa25a8bd3016cc7ee758f46'),
+    '52': ObjectId('6aa25a8bd3016cc7ee758f47'),
+    '53': ObjectId('6aa25a8bd3016cc7ee758f48'),
+    '54': ObjectId('6aa25a8bd3016cc7ee758f49'),
+    '55': ObjectId('6aa25a8bd3016cc7ee758f4a'),
+    '56': ObjectId('6aa25a8bd3016cc7ee758f4b'),
+    '57': ObjectId('6aa25a8bd3016cc7ee758f4c'),
+    '58': ObjectId('6aa25a8bd3016cc7ee758f4d'),
+    '59': ObjectId('6aa25a8bd3016cc7ee758f4e'),
+    '60': ObjectId('6aa25a8bd3016cc7ee758f4f'),
+    '61': ObjectId('6aa25a8bd3016cc7ee758f50'),
+    '62': ObjectId('6aa25a8bd3016cc7ee758f51'),
+    '63': ObjectId('6aa25a8bd3016cc7ee758f52'),
+    '64': ObjectId('6aa25a8bd3016cc7ee758f53'),
+    '65': ObjectId('6aa25a8bd3016cc7ee758f54'),
+    '66': ObjectId('6aa25a8bd3016cc7ee758f55'),
+    '67': ObjectId('6aa25a8bd3016cc7ee758f56'),
+    '68': ObjectId('6aa25a8bd3016cc7ee758f57'),
+    '69': ObjectId('6aa25a8bd3016cc7ee758f58'),
+    '70': ObjectId('6aa25a8bd3016cc7ee758f59'),
+    '71': ObjectId('6aa25a8bd3016cc7ee758f5a'),
+    '72': ObjectId('6aa25a8bd3016cc7ee758f5b'),
+    '73': ObjectId('6aa25a8bd3016cc7ee758f5c'),
+    '74': ObjectId('6aa25a8bd3016cc7ee758f5d'),
+    '75': ObjectId('6aa25a8bd3016cc7ee758f5e'),
+    '76': ObjectId('6aa25a8bd3016cc7ee758f5f'),
+    '77': ObjectId('6aa25a8bd3016cc7ee758f60'),
+    '78': ObjectId('6aa25a8bd3016cc7ee758f61'),
+    '79': ObjectId('6aa25a8bd3016cc7ee758f62'),
+    '80': ObjectId('6aa25a8bd3016cc7ee758f63'),
+    '81': ObjectId('6aa25a8bd3016cc7ee758f64'),
+    '82': ObjectId('6aa25a8bd3016cc7ee758f65'),
+    '83': ObjectId('6aa25a8bd3016cc7ee758f66'),
+    '84': ObjectId('6aa25a8bd3016cc7ee758f67'),
+    '85': ObjectId('6aa25a8bd3016cc7ee758f68'),
+    '86': ObjectId('6aa25a8bd3016cc7ee758f69'),
+    '87': ObjectId('6aa25a8bd3016cc7ee758f6a'),
+    '88': ObjectId('6aa25a8bd3016cc7ee758f6b'),
+    '89': ObjectId('6aa25a8bd3016cc7ee758f6c'),
+    '90': ObjectId('6aa25a8bd3016cc7ee758f6d'),
+    '91': ObjectId('6aa25a8bd3016cc7ee758f6e'),
+    '92': ObjectId('6aa25a8bd3016cc7ee758f6f'),
+    '93': ObjectId('6aa25a8bd3016cc7ee758f70'),
+    '94': ObjectId('6aa25a8bd3016cc7ee758f71'),
+    '95': ObjectId('6aa25a8bd3016cc7ee758f72'),
+    '96': ObjectId('6aa25a8bd3016cc7ee758f73'),
+    '97': ObjectId('6aa25a8bd3016cc7ee758f74'),
+    '98': ObjectId('6aa25a8bd3016cc7ee758f75'),
+    '99': ObjectId('6aa25a8bd3016cc7ee758f76'),
+    '100': ObjectId('6aa25a8bd3016cc7ee758f77'),
+    '101': ObjectId('6aa25a8bd3016cc7ee758f78'),
+    '102': ObjectId('6aa25a8bd3016cc7ee758f79'),
+    '103': ObjectId('6aa25a8bd3016cc7ee758f7a'),
+    '104': ObjectId('6aa25a8bd3016cc7ee758f7b'),
+    '105': ObjectId('6aa25a8bd3016cc7ee758f7c'),
+    '106': ObjectId('6aa25a8bd3016cc7ee758f7d'),
+    '107': ObjectId('6aa25a8bd3016cc7ee758f7e'),
+    '108': ObjectId('6aa25a8bd3016cc7ee758f7f'),
+    '109': ObjectId('6aa25a8bd3016cc7ee758f80'),
+    '110': ObjectId('6aa25a8bd3016cc7ee758f81'),
+    '111': ObjectId('6aa25a8bd3016cc7ee758f82'),
+    '112': ObjectId('6aa25a8bd3016cc7ee758f83'),
+    '113': ObjectId('6aa25a8bd3016cc7ee758f84'),
+    '114': ObjectId('6aa25a8bd3016cc7ee758f85'),
+    '115': ObjectId('6aa25a8bd3016cc7ee758f86'),
+    '116': ObjectId('6aa25a8bd3016cc7ee758f87'),
+    '117': ObjectId('6aa25a8bd3016cc7ee758f88'),
+    '118': ObjectId('6aa25a8bd3016cc7ee758f89'),
+    '119': ObjectId('6aa25a8bd3016cc7ee758f8a'),
+    '120': ObjectId('6aa25a8bd3016cc7ee758f8b'),
+    '121': ObjectId('6aa25a8bd3016cc7ee758f8c'),
+    '122': ObjectId('6aa25a8bd3016cc7ee758f8d'),
+    '123': ObjectId('6aa25a8bd3016cc7ee758f8e'),
+    '124': ObjectId('6aa25a8bd3016cc7ee758f8f'),
+    '125': ObjectId('6aa25a8bd3016cc7ee758f90'),
+    '126': ObjectId('6aa25a8bd3016cc7ee758f91'),
+    '127': ObjectId('6aa25a8bd3016cc7ee758f92'),
+    '128': ObjectId('6aa25a8bd3016cc7ee758f93'),
+    '129': ObjectId('6aa25a8bd3016cc7ee758f94'),
+    '130': ObjectId('6aa25a8bd3016cc7ee758f95'),
+    '131': ObjectId('6aa25a8bd3016cc7ee758f96'),
+    '132': ObjectId('6aa25a8bd3016cc7ee758f97'),
+    '133': ObjectId('6aa25a8bd3016cc7ee758f98'),
+    '134': ObjectId('6aa25a8bd3016cc7ee758f99')
+  }
+}
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.students.countDocuments()
+50
+Atlas atlas-xcy14h-shard-0 [primary] pce> db.applications.countDocuments()
+135
+Atlas atlas-xcy14h-shard-0 [primary] pce>
