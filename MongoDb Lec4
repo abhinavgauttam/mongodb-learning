@@ -1,0 +1,3567 @@
+Microsoft Windows [Version 10.0.26200.9445]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user
+Enter password:
+Current Mongosh Log ID: 6aa22ddcb134a36f6621635d
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+MongoInvalidArgumentError: Password cannot be empty
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user\
+Enter password: ****************
+Current Mongosh Log ID: 6aa22df1fd10dba7a0525f2b
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+MongoServerError: bad auth : Authentication failed.
+
+C:\Users\abhin>const categories = [
+'const' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Electronics",
+'"Electronics"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Mobiles",
+'"Mobiles"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Laptops",
+'"Laptops"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Clothing",
+'"Clothing"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Books",
+'"Books"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Furniture",
+'"Furniture"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Shoes",
+'"Shoes"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Accessories",
+'"Accessories"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Home Appliances",
+'"Home Appliances"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Sports"
+'"Sports"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>const brands = [
+'const' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Apple",
+'"Apple"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Samsung",
+'"Samsung"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Dell",
+'"Dell"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "HP",
+'"HP"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Lenovo",
+'"Lenovo"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Sony",
+'"Sony"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Nike",
+'"Nike"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Adidas",
+'"Adidas"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Puma",
+'"Puma"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "OnePlus"
+'"OnePlus"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>const cities = [
+'const' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Chennai",
+'"Chennai"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Bangalore",
+'"Bangalore"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Hyderabad",
+'"Hyderabad"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Coimbatore",
+'"Coimbatore"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Salem",
+'"Salem"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Erode",
+'"Erode"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Tiruchengode",
+'"Tiruchengode"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Madurai",
+'"Madurai"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Trichy",
+'"Trichy"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Pondicherry"
+'"Pondicherry"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>const tags = [
+'const' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "new",
+'"new"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "popular",
+'"popular"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "discount",
+'"discount"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "premium",
+'"premium"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "bestseller",
+'"bestseller"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "trending",
+'"trending"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "featured",
+'"featured"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "budget"
+'"budget"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>const paymentMethods = [
+'const' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "UPI",
+'"UPI"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Credit Card",
+'"Credit Card"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Debit Card",
+'"Debit Card"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Cash",
+'"Cash"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    "Net Banking"
+'"Net Banking"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>// Temporary array to store products
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>let products = [];
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>// Generate 5000 documents
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>for (let i = 1; i <= 5000; i++) {
+(let was unexpected at this time.
+
+C:\Users\abhin>
+C:\Users\abhin>    let category = categories[i % categories.length];
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>    let brand = brands[i % brands.length];
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>    let city = cities[i % cities.length];
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>    let price = Math.floor(Math.random() * 90000) + 1000;
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>    let quantity = Math.floor(Math.random() * 10) + 1;
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>    let rating = Number(
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>        (Math.random() * 4 + 1).toFixed(1)
+* was unexpected at this time.
+
+C:\Users\abhin>    );
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    let productTags = [
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>        tags[i % tags.length],
+'tags[i' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>        tags[(i + 2) % tags.length]
+'tags[' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    ];
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    let product = {
+'let' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        productId: i,
+'productId:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        name: brand + " Product " + i,
+'name:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        category: category,
+'category:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        brand: brand,
+'brand:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        price: price,
+'price:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        quantity: quantity,
+'quantity:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        rating: rating,
+'rating:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        description:
+'description:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            "This is a high quality " +
+'"This is a high quality "' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            category +
+'category' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            " product from " +
+'" product from "' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            brand +
+'brand' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            " with excellent features and performance.",
+'" with excellent features and performance."' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        tags: productTags,
+'tags:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>        seller: {
+'seller:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>            sellerId: 1000 + (i % 100),
+'sellerId:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>            name: "Seller " + (i % 100),
+'name:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>            city: city
+'city:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>        },
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>        location: {
+'location:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>            type: "Point",
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\abhin>
+C:\Users\abhin>            coordinates: [
+'coordinates:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>                76.95 + (Math.random() * 0.5),
+'76.95' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>                11.00 + (Math.random() * 0.5)
+'11.00' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            ]
+']' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>        },
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>        paymentMethods: paymentMethods,
+'paymentMethods:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        isActive: i % 5 !== 0,
+'isActive:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        createdAt: new Date(
+'createdAt:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            2024,
+'2024' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            i % 12,
+'i' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            (i % 28) + 1
++ was unexpected at this time.
+
+C:\Users\abhin>        )
+C:\Users\abhin>    };
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    // Add email to some documents
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    // Useful for Sparse Index
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    if (i % 3 === 0) {
+% was unexpected at this time.
+
+C:\Users\abhin>
+C:\Users\abhin>        product.email =
+'product.email' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            "customer" + i + "@example.com";
+'"customer"' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    // Add discount to some documents
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    // Useful for Partial Index
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    if (i % 4 === 0) {
+% was unexpected at this time.
+
+C:\Users\abhin>
+C:\Users\abhin>        product.discount =
+'product.discount' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>            Math.floor(Math.random() * 40) + 5;
+'Math.floor' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    // Add product to temporary array
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    products.push(product);
+'products.push' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>    // Insert every 500 documents
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    if (products.length === 500) {
+
+C:\Users\abhin>
+C:\Users\abhin>        db.products.insertMany(products);
+'db.products.insertMany' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>        products = [];
+'products' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>    }
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>// Insert remaining documents
+'//' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>if (products.length > 0) {
+> was unexpected at this time.
+
+C:\Users\abhin>
+C:\Users\abhin>    db.products.insertMany(products);
+'db.products.insertMany' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>}
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>
+C:\Users\abhin>
+C:\Users\abhin>print("5000 documents inserted successfully into 'products' collection!");
+Unable to initialize device PRN
+
+C:\Users\abhin>use ecomdb
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin> use ecomDB
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\abhin>mongosh "mongodb+srv://cluster0.xrs2dqk.mongodb.net/" --apiVersion 1 --username 2024pceacsabhinav04_db_user
+Enter password: ****************
+Current Mongosh Log ID: 6aa22efc193ded3d459d8807
+Connecting to:          mongodb+srv://<credentials>@cluster0.xrs2dqk.mongodb.net/?appName=mongosh+2.10.0
+Using MongoDB:          8.0.32 (API Version 1)
+Using Mongosh:          2.10.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+Atlas atlas-xcy14h-shard-0 [primary] test> use ecomDB
+switched to db ecomDB
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> const categories = [
+|     "Electronics",
+|     "Mobiles",
+|     "Laptops",
+|     "Clothing",
+|     "Books",
+|     "Furniture",
+|     "Shoes",
+|     "Accessories",
+|     "Home Appliances",
+|     "Sports"
+| ];
+|
+| const brands = [
+|     "Apple",
+|     "Samsung",
+|     "Dell",
+|     "HP",
+|     "Lenovo",
+|     "Sony",
+|     "Nike",
+|     "Adidas",
+|     "Puma",
+|     "OnePlus"
+| ];
+|
+| const cities = [
+|     "Chennai",
+|     "Bangalore",
+|     "Hyderabad",
+|     "Coimbatore",
+|     "Salem",
+|     "Erode",
+|     "Tiruchengode",
+|     "Madurai",
+|     "Trichy",
+|     "Pondicherry"
+| ];
+|
+| const tags = [
+|     "new",
+|     "popular",
+|     "discount",
+|     "premium",
+|     "bestseller",
+|     "trending",
+|     "featured",
+|     "budget"
+| ];
+|
+| const paymentMethods = [
+|     "UPI",
+|     "Credit Card",
+|     "Debit Card",
+|     "Cash",
+|     "Net Banking"
+| ];
+|
+|
+| // Temporary array to store products
+| let products = [];
+|
+|
+| // Generate 5000 documents
+| for (let i = 1; i <= 5000; i++) {
+|
+|     let category = categories[i % categories.length];
+|
+|     let brand = brands[i % brands.length];
+|
+|     let city = cities[i % cities.length];
+|
+|     let price = Math.floor(Math.random() * 90000) + 1000;
+|
+|     let quantity = Math.floor(Math.random() * 10) + 1;
+|
+|     let rating = Number(
+|         (Math.random() * 4 + 1).toFixed(1)
+|     );
+|
+|
+|     let productTags = [
+|         tags[i % tags.length],
+|         tags[(i + 2) % tags.length]
+|     ];
+|
+|
+|     let product = {
+|
+|         productId: i,
+|
+|         name: brand + " Product " + i,
+|
+|         category: category,
+|
+|         brand: brand,
+|
+|         price: price,
+|
+|         quantity: quantity,
+|
+|         rating: rating,
+|
+|         description:
+|             "This is a high quality " +
+|             category +
+|             " product from " +
+|             brand +
+|             " with excellent features and performance.",
+|
+|         tags: productTags,
+|
+|
+|         seller: {
+|
+|             sellerId: 1000 + (i % 100),
+|
+|             name: "Seller " + (i % 100),
+|
+|             city: city
+|         },
+|
+|
+|         location: {
+|
+|             type: "Point",
+|
+|             coordinates: [
+|                 76.95 + (Math.random() * 0.5),
+|                 11.00 + (Math.random() * 0.5)
+|             ]
+|         },
+|
+|
+|         paymentMethods: paymentMethods,
+|
+|         isActive: i % 5 !== 0,
+|
+|         createdAt: new Date(
+|             2024,
+|             i % 12,
+|             (i % 28) + 1
+|         )
+|     };
+|
+|
+|     // Add email to some documents
+|     // Useful for Sparse Index
+|     if (i % 3 === 0) {
+|
+|         product.email =
+|             "customer" + i + "@example.com";
+|     }
+|
+|
+|     // Add discount to some documents
+|     // Useful for Partial Index
+|     if (i % 4 === 0) {
+|
+|         product.discount =
+|             Math.floor(Math.random() * 40) + 5;
+|     }
+|
+|
+|     // Add product to temporary array
+|     products.push(product);
+|
+|
+|     // Insert every 500 documents
+|     if (products.length === 500) {
+|
+|         db.products.insertMany(products);
+|
+|         products = [];
+|     }
+| }
+|
+|
+| // Insert remaining documents
+| if (products.length > 0) {
+|
+|     db.products.insertMany(products);
+| }
+|
+|
+| print("5000 documents inserted successfully into 'products' collection!");
+Uncaught:
+MongoBulkWriteError: db already exists with different case already have: [ecomdb] trying to create [ecomDB]
+Result: BulkWriteResult {
+  insertedCount: 0,
+  matchedCount: 0,
+  modifiedCount: 0,
+  deletedCount: 0,
+  upsertedCount: 0,
+  upsertedIds: {},
+  insertedIds: {}
+}
+Write Errors: [
+  WriteError {
+    err: {
+      index: 0,
+      code: 13297,
+      errmsg: 'db already exists with different case already have: [ecomdb] trying to create [ecomDB]',
+      errInfo: undefined,
+      op: {
+        productId: 1,
+        name: 'Samsung Product 1',
+        category: 'Mobiles',
+        brand: 'Samsung',
+        price: 6419,
+        quantity: 1,
+        rating: 3.7,
+        description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+        tags: [ 'popular', 'premium' ],
+        seller: { sellerId: 1001, name: 'Seller 1', city: 'Bangalore' },
+        location: {
+          type: 'Point',
+          coordinates: [ 77.21750809777767, 11.317641408962476 ]
+        },
+        paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+        isActive: true,
+        createdAt: ISODate('2024-02-01T18:30:00.000Z'),
+        _id: ObjectId('6aa22f11193ded3d459d8808')
+      }
+    }
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.products.find(
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> const categories = [
+|     "Electronics",
+|     "Mobiles",
+|     "Laptops",
+|     "Clothing",
+|     "Books",
+|     "Furniture",
+|     "Shoes",
+|     "Accessories",
+|     "Home Appliances",
+|     "Sports"
+| ];
+|
+| const brands = [
+|     "Apple",
+|     "Samsung",
+|     "Dell",
+|     "HP",
+|     "Lenovo",
+|     "Sony",
+|     "Nike",
+|     "Adidas",
+|     "Puma",
+|     "OnePlus"
+| ];
+|
+| const cities = [
+|     "Chennai",
+|     "Bangalore",
+|     "Hyderabad",
+|     "Coimbatore",
+|     "Salem",
+|     "Erode",
+|     "Tiruchengode",
+|     "Madurai",
+|     "Trichy",
+|     "Pondicherry"
+| ];
+|
+| const tags = [
+|     "new",
+|     "popular",
+|     "discount",
+|     "premium",
+|     "bestseller",
+|     "trending",
+|     "featured",
+|     "budget"
+| ];
+|
+| const paymentMethods = [
+|     "UPI",
+|     "Credit Card",
+|     "Debit Card",
+|     "Cash",
+|     "Net Banking"
+| ];
+|
+|
+| // Temporary array to store products
+| let products = [];
+|
+|
+| // Generate 5000 documents
+| for (let i = 1; i <= 5000; i++) {
+|
+|     let category = categories[i % categories.length];
+|
+|     let brand = brands[i % brands.length];
+|
+|     let city = cities[i % cities.length];
+|
+|     let price = Math.floor(Math.random() * 90000) + 1000;
+|
+|     let quantity = Math.floor(Math.random() * 10) + 1;
+|
+|     let rating = Number(
+|         (Math.random() * 4 + 1).toFixed(1)
+|     );
+|
+|
+|     let productTags = [
+|         tags[i % tags.length],
+|         tags[(i + 2) % tags.length]
+|     ];
+|
+|
+|     let product = {
+|
+|         productId: i,
+|
+|         name: brand + " Product " + i,
+|
+|         category: category,
+|
+|         brand: brand,
+|
+|         price: price,
+|
+|         quantity: quantity,
+|
+|         rating: rating,
+|
+|         description:
+|             "This is a high quality " +
+|             category +
+|             " product from " +
+|             brand +
+|             " with excellent features and performance.",
+|
+|         tags: productTags,
+|
+|
+|         seller: {
+|
+|             sellerId: 1000 + (i % 100),
+|
+|             name: "Seller " + (i % 100),
+|
+|             city: city
+|         },
+|
+|
+|         location: {
+|
+|             type: "Point",
+|
+|             coordinates: [
+|                 76.95 + (Math.random() * 0.5),
+|                 11.00 + (Math.random() * 0.5)
+|             ]
+|         },
+|
+|
+|         paymentMethods: paymentMethods,
+|
+|         isActive: i % 5 !== 0,
+|
+|         createdAt: new Date(
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.products.find({ price: { $gt: 10000 } })
+|
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.products.find({ price: { $gt: 10000 } })
+|
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.products.countDocuments()
+|
+0
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> const categories = [
+|     "Electronics",
+|     "Mobiles",
+|     "Laptops",
+|     "Clothing",
+|     "Books",
+|     "Furniture",
+|     "Shoes",
+|     "Accessories",
+|     "Home Appliances",
+|     "Sports"
+| ];
+|
+| const brands = [
+|     "Apple",
+|     "Samsung",
+|     "Dell",
+|     "HP",
+|     "Lenovo",
+|     "Sony",
+|     "Nike",
+|     "Adidas",
+|     "Puma",
+|     "OnePlus"
+| ];
+|
+| const cities = [
+|     "Chennai",
+|     "Bangalore",
+|     "Hyderabad",
+|     "Coimbatore",
+|     "Salem",
+|     "Erode",
+|     "Tiruchengode",
+|     "Madurai",
+|     "Trichy",
+|     "Pondicherry"
+| ];
+|
+| const tags = [
+|     "new",
+|     "popular",
+|     "discount",
+|     "premium",
+|     "bestseller",
+|     "trending",
+|     "featured",
+|     "budget"
+| ];
+|
+| const paymentMethods = [
+|     "UPI",
+|     "Credit Card",
+|     "Debit Card",
+|     "Cash",
+|     "Net Banking"
+| ];
+|
+|
+| // Temporary array to store products
+| let products = [];
+|
+|
+| // Generate 5000 documents
+| for (let i = 1; i <= 5000; i++) {
+|
+|     let category = categories[i % categories.length];
+|
+|     let brand = brands[i % brands.length];
+|
+|     let city = cities[i % cities.length];
+|
+|     let price = Math.floor(Math.random() * 90000) + 1000;
+|
+|     let quantity = Math.floor(Math.random() * 10) + 1;
+|
+|     let rating = Number(
+|         (Math.random() * 4 + 1).toFixed(1)
+|     );
+|
+|
+|     let productTags = [
+|         tags[i % tags.length],
+|         tags[(i + 2) % tags.length]
+|     ];
+|
+|
+|     let product = {
+|
+|         productId: i,
+|
+|         name: brand + " Product " + i,
+|
+|         category: category,
+|
+|         brand: brand,
+|
+|         price: price,
+|
+|         quantity: quantity,
+|
+|         rating: rating,
+|
+|         description:
+|             "This is a high quality " +
+|             category +
+|             " product from " +
+|             brand +
+|             " with excellent features and performance.",
+|
+|         tags: productTags,
+|
+|
+|         seller: {
+|
+|             sellerId: 1000 + (i % 100),
+|
+|             name: "Seller " + (i % 100),
+|
+|             city: city
+|         },
+|
+|
+|         location: {
+|
+|             type: "Point",
+|
+|             coordinates: [
+|                 76.95 + (Math.random() * 0.5),
+|                 11.00 + (Math.random() * 0.5)
+|             ]
+|         },
+|
+|
+|         paymentMethods: paymentMethods,
+|
+|         isActive: i % 5 !== 0,
+|
+|         createdAt: new Date(
+|             2024,
+|             i % 12,
+|             (i % 28) + 1
+|         )
+|     };
+|
+|
+|     // Add email to some documents
+|     // Useful for Sparse Index
+|     if (i % 3 === 0) {
+|
+|         product.email =
+|             "customer" + i + "@example.com";
+|     }
+|
+|
+|     // Add discount to some documents
+|     // Useful for Partial Index
+|     if (i % 4 === 0) {
+|
+|         product.discount =
+|             Math.floor(Math.random() * 40) + 5;
+|     }
+|
+|
+|     // Add product to temporary array
+|     products.push(product);
+|
+|
+|     // Insert every 500 documents
+|     if (products.length === 500) {
+|
+|         db.products.insertMany(products);
+|
+|         products = [];
+|     }
+| }
+|
+|
+| // Insert remaining documents
+| if (products.length > 0) {
+|
+|     db.products.insertMany(products);
+| }
+|
+|
+| print("5000 documents inserted successfully into 'products' collection!");
+Uncaught:
+MongoBulkWriteError: db already exists with different case already have: [ecomdb] trying to create [ecomDB]
+Result: BulkWriteResult {
+  insertedCount: 0,
+  matchedCount: 0,
+  modifiedCount: 0,
+  deletedCount: 0,
+  upsertedCount: 0,
+  upsertedIds: {},
+  insertedIds: {}
+}
+Write Errors: [
+  WriteError {
+    err: {
+      index: 0,
+      code: 13297,
+      errmsg: 'db already exists with different case already have: [ecomdb] trying to create [ecomDB]',
+      errInfo: undefined,
+      op: {
+        productId: 1,
+        name: 'Samsung Product 1',
+        category: 'Mobiles',
+        brand: 'Samsung',
+        price: 61479,
+        quantity: 9,
+        rating: 3.7,
+        description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+        tags: [ 'popular', 'premium' ],
+        seller: { sellerId: 1001, name: 'Seller 1', city: 'Bangalore' },
+        location: {
+          type: 'Point',
+          coordinates: [ 77.23975277635688, 11.256552322135867 ]
+        },
+        paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+        isActive: true,
+        createdAt: ISODate('2024-02-01T18:30:00.000Z'),
+        _id: ObjectId('6aa230eb193ded3d459d89fc')
+      }
+    }
+  }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> db.products.find({ price: { $gt: 10000 } })
+|
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomDB> use ecomdb
+|
+switched to db ecomdb
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.countDocuments()
+|
+100
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> const categories = [
+|     "Electronics",
+|     "Mobiles",
+|     "Laptops",
+|     "Clothing",
+|     "Books",
+|     "Furniture",
+|     "Shoes",
+|     "Accessories",
+|     "Home Appliances",
+|     "Sports"
+| ];
+|
+| const brands = [
+|     "Apple",
+|     "Samsung",
+|     "Dell",
+|     "HP",
+|     "Lenovo",
+|     "Sony",
+|     "Nike",
+|     "Adidas",
+|     "Puma",
+|     "OnePlus"
+| ];
+|
+| const cities = [
+|     "Chennai",
+|     "Bangalore",
+|     "Hyderabad",
+|     "Coimbatore",
+|     "Salem",
+|     "Erode",
+|     "Tiruchengode",
+|     "Madurai",
+|     "Trichy",
+|     "Pondicherry"
+| ];
+|
+| const tags = [
+|     "new",
+|     "popular",
+|     "discount",
+|     "premium",
+|     "bestseller",
+|     "trending",
+|     "featured",
+|     "budget"
+| ];
+|
+| const paymentMethods = [
+|     "UPI",
+|     "Credit Card",
+|     "Debit Card",
+|     "Cash",
+|     "Net Banking"
+| ];
+|
+|
+| // Temporary array to store products
+| let products = [];
+|
+|
+| // Generate 5000 documents
+| for (let i = 1; i <= 5000; i++) {
+|
+|     let category = categories[i % categories.length];
+|
+|     let brand = brands[i % brands.length];
+|
+|     let city = cities[i % cities.length];
+|
+|     let price = Math.floor(Math.random() * 90000) + 1000;
+|
+|     let quantity = Math.floor(Math.random() * 10) + 1;
+|
+|     let rating = Number(
+|         (Math.random() * 4 + 1).toFixed(1)
+|     );
+|
+|
+|     let productTags = [
+|         tags[i % tags.length],
+|         tags[(i + 2) % tags.length]
+|     ];
+|
+|
+|     let product = {
+|
+|         productId: i,
+|
+|         name: brand + " Product " + i,
+|
+|         category: category,
+|
+|         brand: brand,
+|
+|         price: price,
+|
+|         quantity: quantity,
+|
+|         rating: rating,
+|
+|         description:
+|             "This is a high quality " +
+|             category +
+|             " product from " +
+|             brand +
+|             " with excellent features and performance.",
+|
+|         tags: productTags,
+|
+|
+|         seller: {
+|
+|             sellerId: 1000 + (i % 100),
+|
+|             name: "Seller " + (i % 100),
+|
+|             city: city
+|         },
+|
+|
+|         location: {
+|
+|             type: "Point",
+|
+|             coordinates: [
+|                 76.95 + (Math.random() * 0.5),
+|                 11.00 + (Math.random() * 0.5)
+|             ]
+|         },
+|
+|
+|         paymentMethods: paymentMethods,
+|
+|         isActive: i % 5 !== 0,
+|
+|         createdAt: new Date(
+|             2024,
+|             i % 12,
+|             (i % 28) + 1
+|         )
+|     };
+|
+|
+|     // Add email to some documents
+|     // Useful for Sparse Index
+|     if (i % 3 === 0) {
+|
+|         product.email =
+|             "customer" + i + "@example.com";
+|     }
+|
+|
+|     // Add discount to some documents
+|     // Useful for Partial Index
+|     if (i % 4 === 0) {
+|
+|         product.discount =
+|             Math.floor(Math.random() * 40) + 5;
+|     }
+|
+|
+|     // Add product to temporary array
+|     products.push(product);
+|
+|
+|     // Insert every 500 documents
+|     if (products.length === 500) {
+|
+|         db.products.insertMany(products);
+|
+|         products = [];
+|     }
+| }
+|
+|
+| // Insert remaining documents
+| if (products.length > 0) {
+|
+|     db.products.insertMany(products);
+| }
+|
+|
+| print("5000 documents inserted successfully into 'products' collection!");
+5000 documents inserted successfully into 'products' collection!
+
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.countDocuments()
+|
+5100
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({ price: { $gt: 10000 } })
+|
+[
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9f'),
+    productId: 19,
+    productName: 'Product 19',
+    category: 'Mouse',
+    brand: 'Samsung',
+    price: 10500,
+    stock: 29,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1019, sellerName: 'Seller 19' },
+    createdAt: ISODate('2026-09-09T04:15:32.880Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64efa0'),
+    productId: 20,
+    productName: 'Product 20',
+    category: 'Laptop',
+    brand: 'HP',
+    price: 11000,
+    stock: 30,
+    rating: 4,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1020, sellerName: 'Seller 20' },
+    createdAt: ISODate('2026-09-09T04:15:32.975Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa1'),
+    productId: 21,
+    productName: 'Product 21',
+    category: 'Mobile',
+    brand: 'Dell',
+    price: 11500,
+    stock: 31,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1021, sellerName: 'Seller 21' },
+    createdAt: ISODate('2026-09-09T04:15:33.053Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa2'),
+    productId: 22,
+    productName: 'Product 22',
+    category: 'Headphones',
+    brand: 'Samsung',
+    price: 12000,
+    stock: 32,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1022, sellerName: 'Seller 22' },
+    createdAt: ISODate('2026-09-09T04:15:33.139Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa3'),
+    productId: 23,
+    productName: 'Product 23',
+    category: 'Keyboard',
+    brand: 'HP',
+    price: 12500,
+    stock: 33,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1023, sellerName: 'Seller 23' },
+    createdAt: ISODate('2026-09-09T04:15:33.210Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa4'),
+    productId: 24,
+    productName: 'Product 24',
+    category: 'Mouse',
+    brand: 'Dell',
+    price: 13000,
+    stock: 34,
+    rating: 3,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1024, sellerName: 'Seller 24' },
+    createdAt: ISODate('2026-09-09T04:15:33.303Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa5'),
+    productId: 25,
+    productName: 'Product 25',
+    category: 'Laptop',
+    brand: 'Samsung',
+    price: 13500,
+    stock: 35,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1025, sellerName: 'Seller 25' },
+    createdAt: ISODate('2026-09-09T04:15:33.376Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa6'),
+    productId: 26,
+    productName: 'Product 26',
+    category: 'Mobile',
+    brand: 'HP',
+    price: 14000,
+    stock: 36,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1026, sellerName: 'Seller 26' },
+    createdAt: ISODate('2026-09-09T04:15:33.452Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa7'),
+    productId: 27,
+    productName: 'Product 27',
+    category: 'Headphones',
+    brand: 'Dell',
+    price: 14500,
+    stock: 37,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1027, sellerName: 'Seller 27' },
+    createdAt: ISODate('2026-09-09T04:15:33.531Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa8'),
+    productId: 28,
+    productName: 'Product 28',
+    category: 'Keyboard',
+    brand: 'Samsung',
+    price: 15000,
+    stock: 38,
+    rating: 3.5,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1028, sellerName: 'Seller 28' },
+    createdAt: ISODate('2026-09-09T04:15:33.646Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efa9'),
+    productId: 29,
+    productName: 'Product 29',
+    category: 'Mouse',
+    brand: 'HP',
+    price: 15500,
+    stock: 39,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1029, sellerName: 'Seller 29' },
+    createdAt: ISODate('2026-09-09T04:15:33.735Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efaa'),
+    productId: 30,
+    productName: 'Product 30',
+    category: 'Laptop',
+    brand: 'Dell',
+    price: 16000,
+    stock: 40,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1030, sellerName: 'Seller 30' },
+    createdAt: ISODate('2026-09-09T04:15:33.817Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6562efae3e9d64efab'),
+    productId: 31,
+    productName: 'Product 31',
+    category: 'Mobile',
+    brand: 'Samsung',
+    price: 16500,
+    stock: 41,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1031, sellerName: 'Seller 31' },
+    createdAt: ISODate('2026-09-09T04:15:33.904Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efac'),
+    productId: 32,
+    productName: 'Product 32',
+    category: 'Headphones',
+    brand: 'HP',
+    price: 17000,
+    stock: 42,
+    rating: 4,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1032, sellerName: 'Seller 32' },
+    createdAt: ISODate('2026-09-09T04:15:34.002Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efad'),
+    productId: 33,
+    productName: 'Product 33',
+    category: 'Keyboard',
+    brand: 'Dell',
+    price: 17500,
+    stock: 43,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1033, sellerName: 'Seller 33' },
+    createdAt: ISODate('2026-09-09T04:15:34.088Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efae'),
+    productId: 34,
+    productName: 'Product 34',
+    category: 'Mouse',
+    brand: 'Samsung',
+    price: 18000,
+    stock: 44,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1034, sellerName: 'Seller 34' },
+    createdAt: ISODate('2026-09-09T04:15:34.173Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efaf'),
+    productId: 35,
+    productName: 'Product 35',
+    category: 'Laptop',
+    brand: 'HP',
+    price: 18500,
+    stock: 45,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1035, sellerName: 'Seller 35' },
+    createdAt: ISODate('2026-09-09T04:15:34.251Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efb0'),
+    productId: 36,
+    productName: 'Product 36',
+    category: 'Mobile',
+    brand: 'Dell',
+    price: 19000,
+    stock: 46,
+    rating: 3,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1036, sellerName: 'Seller 36' },
+    createdAt: ISODate('2026-09-09T04:15:34.334Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efb1'),
+    productId: 37,
+    productName: 'Product 37',
+    category: 'Headphones',
+    brand: 'Samsung',
+    price: 19500,
+    stock: 47,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1037, sellerName: 'Seller 37' },
+    createdAt: ISODate('2026-09-09T04:15:34.406Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6662efae3e9d64efb2'),
+    productId: 38,
+    productName: 'Product 38',
+    category: 'Keyboard',
+    brand: 'HP',
+    price: 20000,
+    stock: 48,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1038, sellerName: 'Seller 38' },
+    createdAt: ISODate('2026-09-09T04:15:34.486Z')
+  }
+]
+Type "it" for more
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ price: 1 })
+|
+price_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({ price: { $gt: 10000 } }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { price: { '$gt': 10000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: 'F4407A58',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(10000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 4575,
+    executionTimeMillis: 9,
+    totalKeysExamined: 4575,
+    totalDocsExamined: 4575,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 4575,
+      executionTimeMillisEstimate: 9,
+      works: 4576,
+      advanced: 4575,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 4575,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 4575,
+        executionTimeMillisEstimate: 1,
+        works: 4576,
+        advanced: 4575,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(10000, inf.0]' ] },
+        keysExamined: 4575,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: '0CD95C3D7D30003104D13FE0880CD08BAE64AC0AB1931BF4AAB877A8FE0B2677',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 10000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015098, i: 3 }),
+    signature: {
+      hash: Binary.createFromBase64('atyoxC93tR5gxBYUYm/sdz45GU8=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015098, i: 3 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ category: 1 })
+|
+category_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({ category: "Mobiles" }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { category: { '$eq': 'Mobiles' } },
+    indexFilterSet: false,
+    queryHash: '421A7F3B',
+    planCacheShapeHash: '421A7F3B',
+    planCacheKey: 'E8986359',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { category: 1 },
+        indexName: 'category_1',
+        isMultiKey: false,
+        multiKeyPaths: { category: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { category: [ '["Mobiles", "Mobiles"]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 500,
+    executionTimeMillis: 1,
+    totalKeysExamined: 500,
+    totalDocsExamined: 500,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 500,
+      executionTimeMillisEstimate: 0,
+      works: 501,
+      advanced: 500,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 500,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 500,
+        executionTimeMillisEstimate: 0,
+        works: 501,
+        advanced: 500,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { category: 1 },
+        indexName: 'category_1',
+        isMultiKey: false,
+        multiKeyPaths: { category: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { category: [ '["Mobiles", "Mobiles"]' ] },
+        keysExamined: 500,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'FB43D58F918CC9E3A8876B272D927C4554EB605CCBBC5A49F2C062D3A89A3744',
+  command: {
+    find: 'products',
+    filter: { category: 'Mobiles' },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015118, i: 4 }),
+    signature: {
+      hash: Binary.createFromBase64('6wb8RhUNxfD8VP+4FM9iE0+XtXE=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015118, i: 4 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ brand: 1 })
+|
+brand_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({ brand: "Samsung" }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { brand: { '$eq': 'Samsung' } },
+    indexFilterSet: false,
+    queryHash: 'D75F3C01',
+    planCacheShapeHash: 'D75F3C01',
+    planCacheKey: 'AE6DBF6B',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { brand: 1 },
+        indexName: 'brand_1',
+        isMultiKey: false,
+        multiKeyPaths: { brand: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { brand: [ '["Samsung", "Samsung"]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 534,
+    executionTimeMillis: 1,
+    totalKeysExamined: 534,
+    totalDocsExamined: 534,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 534,
+      executionTimeMillisEstimate: 1,
+      works: 535,
+      advanced: 534,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 534,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 534,
+        executionTimeMillisEstimate: 1,
+        works: 535,
+        advanced: 534,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { brand: 1 },
+        indexName: 'brand_1',
+        isMultiKey: false,
+        multiKeyPaths: { brand: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { brand: [ '["Samsung", "Samsung"]' ] },
+        keysExamined: 534,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'B5FB221EAD5B2C498767E8A5AFAE58A740456ED5ECC093D08EA051C236E7C1CD',
+  command: { find: 'products', filter: { brand: 'Samsung' }, '$db': 'ecomdb' },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015134, i: 6 }),
+    signature: {
+      hash: Binary.createFromBase64('n81U+1vVzEW0OHPegTzZl+HxYEI=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015134, i: 6 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ rating: -1 })
+|
+rating_-1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find().sort({ rating: -1 }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: {},
+    indexFilterSet: false,
+    queryHash: '9C46B091',
+    planCacheShapeHash: '9C46B091',
+    planCacheKey: 'FAC72AC5',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { rating: -1 },
+        indexName: 'rating_-1',
+        isMultiKey: false,
+        multiKeyPaths: { rating: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { rating: [ '[MaxKey, MinKey]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 5100,
+    executionTimeMillis: 7,
+    totalKeysExamined: 5100,
+    totalDocsExamined: 5100,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 5100,
+      executionTimeMillisEstimate: 7,
+      works: 5101,
+      advanced: 5100,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 5100,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 5100,
+        executionTimeMillisEstimate: 2,
+        works: 5101,
+        advanced: 5100,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { rating: -1 },
+        indexName: 'rating_-1',
+        isMultiKey: false,
+        multiKeyPaths: { rating: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { rating: [ '[MaxKey, MinKey]' ] },
+        keysExamined: 5100,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: '075DCE8A494F8ABB6F24CA353854602D24E2EE13F5255904BDEA254A9AA37875',
+  command: {
+    find: 'products',
+    filter: {},
+    sort: { rating: -1 },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015392, i: 3 }),
+    signature: {
+      hash: Binary.createFromBase64('xQnTvOS21q/pK2tn5kJPdu2ptSg=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015392, i: 3 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ category: 1, price: 1 })
+|
+category_1_price_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({
+|     category: "Mobiles",
+|     price: { $gt: 10000 }
+| }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: {
+      '$and': [
+        { category: { '$eq': 'Mobiles' } },
+        { price: { '$gt': 10000 } }
+      ]
+    },
+    indexFilterSet: false,
+    queryHash: '4241127D',
+    planCacheShapeHash: '4241127D',
+    planCacheKey: 'AA7CEDD8',
+    optimizationTimeMillis: 2,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { category: 1, price: 1 },
+        indexName: 'category_1_price_1',
+        isMultiKey: false,
+        multiKeyPaths: { category: [], price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: {
+          category: [ '["Mobiles", "Mobiles"]' ],
+          price: [ '(10000, inf.0]' ]
+        }
+      }
+    },
+    rejectedPlans: [
+      {
+        isCached: false,
+        stage: 'FETCH',
+        filter: { price: { '$gt': 10000 } },
+        inputStage: {
+          stage: 'IXSCAN',
+          keyPattern: { category: 1 },
+          indexName: 'category_1',
+          isMultiKey: false,
+          multiKeyPaths: { category: [] },
+          isUnique: false,
+          isSparse: false,
+          isPartial: false,
+          indexVersion: 2,
+          direction: 'forward',
+          indexBounds: { category: [ '["Mobiles", "Mobiles"]' ] }
+        }
+      },
+      {
+        isCached: false,
+        stage: 'FETCH',
+        filter: { category: { '$eq': 'Mobiles' } },
+        inputStage: {
+          stage: 'IXSCAN',
+          keyPattern: { price: 1 },
+          indexName: 'price_1',
+          isMultiKey: false,
+          multiKeyPaths: { price: [] },
+          isUnique: false,
+          isSparse: false,
+          isPartial: false,
+          indexVersion: 2,
+          direction: 'forward',
+          indexBounds: { price: [ '(10000, inf.0]' ] }
+        }
+      }
+    ]
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 456,
+    executionTimeMillis: 2,
+    totalKeysExamined: 456,
+    totalDocsExamined: 456,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 456,
+      executionTimeMillisEstimate: 0,
+      works: 457,
+      advanced: 456,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 456,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 456,
+        executionTimeMillisEstimate: 0,
+        works: 457,
+        advanced: 456,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { category: 1, price: 1 },
+        indexName: 'category_1_price_1',
+        isMultiKey: false,
+        multiKeyPaths: { category: [], price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: {
+          category: [ '["Mobiles", "Mobiles"]' ],
+          price: [ '(10000, inf.0]' ]
+        },
+        keysExamined: 456,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'BB471806D3E1912048F5333409507E5FB8ADB99A796BACF4D8B322070F054487',
+  command: {
+    find: 'products',
+    filter: { category: 'Mobiles', price: { '$gt': 10000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015411, i: 2 }),
+    signature: {
+      hash: Binary.createFromBase64('yp7QDHMzMVqdaF/RTp8mdCmaPH0=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015411, i: 2 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({ brand: 1, price: 1 })
+|
+brand_1_price_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find({
+|     brand: "Samsung",
+|     price: { $gt: 10000 }
+| }).explain("executionStats")
+|
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: {
+      '$and': [ { brand: { '$eq': 'Samsung' } }, { price: { '$gt': 10000 } } ]
+    },
+    indexFilterSet: false,
+    queryHash: 'E724BA62',
+    planCacheShapeHash: 'E724BA62',
+    planCacheKey: '321A4CD0',
+    optimizationTimeMillis: 1,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { brand: 1, price: 1 },
+        indexName: 'brand_1_price_1',
+        isMultiKey: false,
+        multiKeyPaths: { brand: [], price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: {
+          brand: [ '["Samsung", "Samsung"]' ],
+          price: [ '(10000, inf.0]' ]
+        }
+      }
+    },
+    rejectedPlans: [
+      {
+        isCached: false,
+        stage: 'FETCH',
+        filter: { price: { '$gt': 10000 } },
+        inputStage: {
+          stage: 'IXSCAN',
+          keyPattern: { brand: 1 },
+          indexName: 'brand_1',
+          isMultiKey: false,
+          multiKeyPaths: { brand: [] },
+          isUnique: false,
+          isSparse: false,
+          isPartial: false,
+          indexVersion: 2,
+          direction: 'forward',
+          indexBounds: { brand: [ '["Samsung", "Samsung"]' ] }
+        }
+      },
+      {
+        isCached: false,
+        stage: 'FETCH',
+        filter: { brand: { '$eq': 'Samsung' } },
+        inputStage: {
+          stage: 'IXSCAN',
+          keyPattern: { price: 1 },
+          indexName: 'price_1',
+          isMultiKey: false,
+          multiKeyPaths: { price: [] },
+          isUnique: false,
+          isSparse: false,
+          isPartial: false,
+          indexVersion: 2,
+          direction: 'forward',
+          indexBounds: { price: [ '(10000, inf.0]' ] }
+        }
+      }
+    ]
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 478,
+    executionTimeMillis: 2,
+    totalKeysExamined: 478,
+    totalDocsExamined: 478,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 478,
+      executionTimeMillisEstimate: 0,
+      works: 479,
+      advanced: 478,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 478,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 478,
+        executionTimeMillisEstimate: 0,
+        works: 479,
+        advanced: 478,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { brand: 1, price: 1 },
+        indexName: 'brand_1_price_1',
+        isMultiKey: false,
+        multiKeyPaths: { brand: [], price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: {
+          brand: [ '["Samsung", "Samsung"]' ],
+          price: [ '(10000, inf.0]' ]
+        },
+        keysExamined: 478,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: 'AFA983EE33778815AAFACE7CD918DD3D9F8EAE0E5ED1041EECBD01D8598650CD',
+  command: {
+    find: 'products',
+    filter: { brand: 'Samsung', price: { '$gt': 10000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015427, i: 14 }),
+    signature: {
+      hash: Binary.createFromBase64('cklezr9i66E88ZZOiqE8ZRXRbjQ=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015427, i: 14 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.countDocuments()
+|
+| db.products.find()
+|
+|
+| db.products.find( { price : {$gt : 20000} } )
+|
+| db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+|
+| db.products.createIndex({price : 1})
+|
+| db.products.getIndexes()
+|
+| db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { price: { '$gt': 20000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: '971972C5',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3995,
+    executionTimeMillis: 5,
+    totalKeysExamined: 3995,
+    totalDocsExamined: 3995,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 3995,
+      executionTimeMillisEstimate: 6,
+      works: 3996,
+      advanced: 3995,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 3995,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 3995,
+        executionTimeMillisEstimate: 2,
+        works: 3996,
+        advanced: 3995,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] },
+        keysExamined: 3995,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: '0CD95C3D7D30003104D13FE0880CD08BAE64AC0AB1931BF4AAB877A8FE0B2677',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 20000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015468, i: 11 }),
+    signature: {
+      hash: Binary.createFromBase64('K+sI4OixaFPlnx1Elrc9nsoATLI=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015468, i: 11 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.countDocuments()
+5100
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find()
+[
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef8d'),
+    productId: 1,
+    productName: 'Product 1',
+    category: 'Mobile',
+    brand: 'Samsung',
+    price: 5000,
+    stock: 14,
+    inStock: true,
+    tags: [ 'electronics', 'new', 'sale' ],
+    seller: { sellerId: 1001, sellerName: 'Seller 1' },
+    createdAt: ISODate('2026-09-09T04:15:31.086Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef8e'),
+    productId: 2,
+    productName: 'Product 2',
+    category: 'Headphones',
+    brand: 'HP',
+    price: 2000,
+    stock: 12,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1002, sellerName: 'Seller 2' },
+    createdAt: ISODate('2026-09-09T04:15:31.169Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef8f'),
+    productId: 3,
+    productName: 'Product 3',
+    category: 'Keyboard',
+    brand: 'Dell',
+    price: 2500,
+    stock: 13,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1003, sellerName: 'Seller 3' },
+    createdAt: ISODate('2026-09-09T04:15:31.255Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef90'),
+    productId: 4,
+    productName: 'Product 4',
+    category: 'Mouse',
+    brand: 'Samsung',
+    price: 3000,
+    stock: 14,
+    rating: 3.5,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1004, sellerName: 'Seller 4' },
+    createdAt: ISODate('2026-09-09T04:15:31.328Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef91'),
+    productId: 5,
+    productName: 'Product 5',
+    category: 'Laptop',
+    brand: 'HP',
+    price: 3500,
+    stock: 15,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1005, sellerName: 'Seller 5' },
+    createdAt: ISODate('2026-09-09T04:15:31.445Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef92'),
+    productId: 6,
+    productName: 'Product 6',
+    category: 'Mobile',
+    brand: 'Dell',
+    price: 4000,
+    stock: 16,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1006, sellerName: 'Seller 6' },
+    createdAt: ISODate('2026-09-09T04:15:31.543Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef93'),
+    productId: 7,
+    productName: 'Product 7',
+    category: 'Headphones',
+    brand: 'Samsung',
+    price: 4500,
+    stock: 17,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1007, sellerName: 'Seller 7' },
+    createdAt: ISODate('2026-09-09T04:15:31.622Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef94'),
+    productId: 8,
+    productName: 'Product 8',
+    category: 'Keyboard',
+    brand: 'HP',
+    price: 5000,
+    stock: 18,
+    rating: 4,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1008, sellerName: 'Seller 8' },
+    createdAt: ISODate('2026-09-09T04:15:31.734Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef95'),
+    productId: 9,
+    productName: 'Product 9',
+    category: 'Mouse',
+    brand: 'Dell',
+    price: 5500,
+    stock: 19,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1009, sellerName: 'Seller 9' },
+    createdAt: ISODate('2026-09-09T04:15:31.815Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef96'),
+    productId: 10,
+    productName: 'Product 10',
+    category: 'Laptop',
+    brand: 'Samsung',
+    price: 6000,
+    stock: 20,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1010, sellerName: 'Seller 10' },
+    createdAt: ISODate('2026-09-09T04:15:31.899Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6362efae3e9d64ef97'),
+    productId: 11,
+    productName: 'Product 11',
+    category: 'Mobile',
+    brand: 'HP',
+    price: 6500,
+    stock: 21,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1011, sellerName: 'Seller 11' },
+    createdAt: ISODate('2026-09-09T04:15:31.987Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef98'),
+    productId: 12,
+    productName: 'Product 12',
+    category: 'Headphones',
+    brand: 'Dell',
+    price: 7000,
+    stock: 22,
+    rating: 3,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1012, sellerName: 'Seller 12' },
+    createdAt: ISODate('2026-09-09T04:15:32.087Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef99'),
+    productId: 13,
+    productName: 'Product 13',
+    category: 'Keyboard',
+    brand: 'Samsung',
+    price: 7500,
+    stock: 23,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1013, sellerName: 'Seller 13' },
+    createdAt: ISODate('2026-09-09T04:15:32.166Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9a'),
+    productId: 14,
+    productName: 'Product 14',
+    category: 'Mouse',
+    brand: 'HP',
+    price: 8000,
+    stock: 24,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1014, sellerName: 'Seller 14' },
+    createdAt: ISODate('2026-09-09T04:15:32.390Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9b'),
+    productId: 15,
+    productName: 'Product 15',
+    category: 'Laptop',
+    brand: 'Dell',
+    price: 8500,
+    stock: 25,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1015, sellerName: 'Seller 15' },
+    createdAt: ISODate('2026-09-09T04:15:32.520Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9c'),
+    productId: 16,
+    productName: 'Product 16',
+    category: 'Mobile',
+    brand: 'Samsung',
+    price: 9000,
+    stock: 26,
+    rating: 3.5,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1016, sellerName: 'Seller 16' },
+    createdAt: ISODate('2026-09-09T04:15:32.609Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9d'),
+    productId: 17,
+    productName: 'Product 17',
+    category: 'Headphones',
+    brand: 'HP',
+    price: 9500,
+    stock: 27,
+    rating: 4,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1017, sellerName: 'Seller 17' },
+    createdAt: ISODate('2026-09-09T04:15:32.698Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9e'),
+    productId: 18,
+    productName: 'Product 18',
+    category: 'Keyboard',
+    brand: 'Dell',
+    price: 10000,
+    stock: 28,
+    rating: 3,
+    inStock: true,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1018, sellerName: 'Seller 18' },
+    createdAt: ISODate('2026-09-09T04:15:32.802Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64ef9f'),
+    productId: 19,
+    productName: 'Product 19',
+    category: 'Mouse',
+    brand: 'Samsung',
+    price: 10500,
+    stock: 29,
+    rating: 3.5,
+    inStock: true,
+    tags: [ 'electronics', 'new' ],
+    seller: { sellerId: 1019, sellerName: 'Seller 19' },
+    createdAt: ISODate('2026-09-09T04:15:32.880Z')
+  },
+  {
+    _id: ObjectId('6aa0dd6462efae3e9d64efa0'),
+    productId: 20,
+    productName: 'Product 20',
+    category: 'Laptop',
+    brand: 'HP',
+    price: 11000,
+    stock: 30,
+    rating: 4,
+    inStock: false,
+    tags: [ 'electronics', 'featured' ],
+    seller: { sellerId: 1020, sellerName: 'Seller 20' },
+    createdAt: ISODate('2026-09-09T04:15:32.975Z')
+  }
+]
+Type "it" for more
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find( { price : {$gt : 20000} } )
+[
+  {
+    _id: ObjectId('6aa23172193ded3d459d8f3d'),
+    productId: 846,
+    name: 'Nike Product 846',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 20019,
+    quantity: 5,
+    rating: 2.6,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1046, name: 'Seller 46', city: 'Tiruchengode' },
+    location: { type: 'Point', coordinates: [ 77.175855260734, 11.10412586547356 ] },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-07-06T18:30:00.000Z'),
+    email: 'customer846@example.com'
+  },
+  {
+    _id: ObjectId('6aa23175193ded3d459d9348'),
+    productId: 1881,
+    name: 'Samsung Product 1881',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20021,
+    quantity: 4,
+    rating: 2.4,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1081, name: 'Seller 81', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.00489427643019, 11.171113555259028 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-05T18:30:00.000Z'),
+    email: 'customer1881@example.com'
+  },
+  {
+    _id: ObjectId('6aa23176193ded3d459d94ac'),
+    productId: 2237,
+    name: 'Adidas Product 2237',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 20044,
+    quantity: 9,
+    rating: 4.8,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1037, name: 'Seller 37', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.26691465991406, 11.034373240189767 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-06-25T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23175193ded3d459d938e'),
+    productId: 1951,
+    name: 'Samsung Product 1951',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20048,
+    quantity: 4,
+    rating: 4.8,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1051, name: 'Seller 51', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.09489483030902, 11.494701282389906 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-19T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23176193ded3d459d946f'),
+    productId: 2176,
+    name: 'Nike Product 2176',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 20071,
+    quantity: 1,
+    rating: 3.6,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1076, name: 'Seller 76', city: 'Tiruchengode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.42657133777254, 11.178241969901379 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-20T18:30:00.000Z'),
+    discount: 43
+  },
+  {
+    _id: ObjectId('6aa23176193ded3d459d9481'),
+    productId: 2194,
+    name: 'Lenovo Product 2194',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 20072,
+    quantity: 2,
+    rating: 2,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1094, name: 'Seller 94', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.42115931988049, 11.378209558216392 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-10T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa2317b193ded3d459d9af9'),
+    productId: 3850,
+    name: 'Apple Product 3850',
+    category: 'Electronics',
+    brand: 'Apple',
+    price: 20073,
+    quantity: 8,
+    rating: 3.1,
+    description: 'This is a high quality Electronics product from Apple with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1050, name: 'Seller 50', city: 'Chennai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.26124340624297, 11.352476396290035 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-11-14T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa2317c193ded3d459d9c4b'),
+    productId: 4188,
+    name: 'Puma Product 4188',
+    category: 'Home Appliances',
+    brand: 'Puma',
+    price: 20088,
+    quantity: 10,
+    rating: 4,
+    description: 'This is a high quality Home Appliances product from Puma with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1088, name: 'Seller 88', city: 'Trichy' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.44964945425166, 11.186895333262486 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-01-16T18:30:00.000Z'),
+    email: 'customer4188@example.com',
+    discount: 19
+  },
+  {
+    _id: ObjectId('6aa23175193ded3d459d91cf'),
+    productId: 1504,
+    name: 'Lenovo Product 1504',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 20093,
+    quantity: 1,
+    rating: 4.4,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1004, name: 'Seller 4', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.42959424389639, 11.431096014099314 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-05-20T18:30:00.000Z'),
+    discount: 13
+  },
+  {
+    _id: ObjectId('6aa23172193ded3d459d8df2'),
+    productId: 515,
+    name: 'Sony Product 515',
+    category: 'Furniture',
+    brand: 'Sony',
+    price: 20134,
+    quantity: 1,
+    rating: 4.4,
+    description: 'This is a high quality Furniture product from Sony with excellent features and performance.',
+    tags: [ 'premium', 'trending' ],
+    seller: { sellerId: 1015, name: 'Seller 15', city: 'Erode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.19515764405364, 11.013061561024081 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-12-11T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa2317d193ded3d459d9e74'),
+    productId: 4741,
+    name: 'Samsung Product 4741',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20137,
+    quantity: 10,
+    rating: 2.8,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1041, name: 'Seller 41', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.2047636043106, 11.487852517205848 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-02-09T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23179193ded3d459d9870'),
+    productId: 3201,
+    name: 'Samsung Product 3201',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20139,
+    quantity: 5,
+    rating: 3,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'popular', 'premium' ],
+    seller: { sellerId: 1001, name: 'Seller 1', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.98176593923671, 11.100147388030122 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-09T18:30:00.000Z'),
+    email: 'customer3201@example.com'
+  },
+  {
+    _id: ObjectId('6aa23179193ded3d459d9826'),
+    productId: 3127,
+    name: 'Adidas Product 3127',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 20149,
+    quantity: 8,
+    rating: 2.4,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1027, name: 'Seller 27', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.27035453253603, 11.276211053028108 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-19T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23172193ded3d459d8ea3'),
+    productId: 692,
+    name: 'Dell Product 692',
+    category: 'Laptops',
+    brand: 'Dell',
+    price: 20155,
+    quantity: 6,
+    rating: 3.6,
+    description: 'This is a high quality Laptops product from Dell with excellent features and performance.',
+    tags: [ 'bestseller', 'featured' ],
+    seller: { sellerId: 1092, name: 'Seller 92', city: 'Hyderabad' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.97594895020477, 11.235055258121438 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-09-20T18:30:00.000Z'),
+    discount: 12
+  },
+  {
+    _id: ObjectId('6aa23175193ded3d459d9355'),
+    productId: 1894,
+    name: 'Lenovo Product 1894',
+    category: 'Books',
+    brand: 'Lenovo',
+    price: 20175,
+    quantity: 9,
+    rating: 3.6,
+    description: 'This is a high quality Books product from Lenovo with excellent features and performance.',
+    tags: [ 'featured', 'new' ],
+    seller: { sellerId: 1094, name: 'Seller 94', city: 'Salem' },
+    location: {
+      type: 'Point',
+      coordinates: [ 76.95891104339957, 11.152501635839805 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-18T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23173193ded3d459d91a4'),
+    productId: 1461,
+    name: 'Samsung Product 1461',
+    category: 'Mobiles',
+    brand: 'Samsung',
+    price: 20178,
+    quantity: 2,
+    rating: 4.7,
+    description: 'This is a high quality Mobiles product from Samsung with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1061, name: 'Seller 61', city: 'Bangalore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.31477239787095, 11.168143808980597 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-05T18:30:00.000Z'),
+    email: 'customer1461@example.com'
+  },
+  {
+    _id: ObjectId('6aa23178193ded3d459d9667'),
+    productId: 2680,
+    name: 'Apple Product 2680',
+    category: 'Electronics',
+    brand: 'Apple',
+    price: 20219,
+    quantity: 4,
+    rating: 4.1,
+    description: 'This is a high quality Electronics product from Apple with excellent features and performance.',
+    tags: [ 'new', 'discount' ],
+    seller: { sellerId: 1080, name: 'Seller 80', city: 'Chennai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.42396190949192, 11.479355201807557 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: false,
+    createdAt: ISODate('2024-05-20T18:30:00.000Z'),
+    discount: 43
+  },
+  {
+    _id: ObjectId('6aa23172193ded3d459d8f1c'),
+    productId: 813,
+    name: 'HP Product 813',
+    category: 'Clothing',
+    brand: 'HP',
+    price: 20243,
+    quantity: 10,
+    rating: 1.3,
+    description: 'This is a high quality Clothing product from HP with excellent features and performance.',
+    tags: [ 'trending', 'budget' ],
+    seller: { sellerId: 1013, name: 'Seller 13', city: 'Coimbatore' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.32089439201812, 11.131767983333642 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-10-01T18:30:00.000Z'),
+    email: 'customer813@example.com'
+  },
+  {
+    _id: ObjectId('6aa2316f193ded3d459d8d49'),
+    productId: 346,
+    name: 'Nike Product 346',
+    category: 'Shoes',
+    brand: 'Nike',
+    price: 20277,
+    quantity: 8,
+    rating: 4.9,
+    description: 'This is a high quality Shoes product from Nike with excellent features and performance.',
+    tags: [ 'discount', 'bestseller' ],
+    seller: { sellerId: 1046, name: 'Seller 46', city: 'Tiruchengode' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.29882054077252, 11.046872339342421 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-11-10T18:30:00.000Z')
+  },
+  {
+    _id: ObjectId('6aa23175193ded3d459d9286'),
+    productId: 1687,
+    name: 'Adidas Product 1687',
+    category: 'Accessories',
+    brand: 'Adidas',
+    price: 20277,
+    quantity: 9,
+    rating: 2.5,
+    description: 'This is a high quality Accessories product from Adidas with excellent features and performance.',
+    tags: [ 'budget', 'popular' ],
+    seller: { sellerId: 1087, name: 'Seller 87', city: 'Madurai' },
+    location: {
+      type: 'Point',
+      coordinates: [ 77.03544323629912, 11.368792938164702 ]
+    },
+    paymentMethods: [ 'UPI', 'Credit Card', 'Debit Card', 'Cash', 'Net Banking' ],
+    isActive: true,
+    createdAt: ISODate('2024-08-07T18:30:00.000Z')
+  }
+]
+Type "it" for more
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { price: { '$gt': 20000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: '971972C5',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3995,
+    executionTimeMillis: 5,
+    totalKeysExamined: 3995,
+    totalDocsExamined: 3995,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 3995,
+      executionTimeMillisEstimate: 5,
+      works: 3996,
+      advanced: 3995,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 3995,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 3995,
+        executionTimeMillisEstimate: 0,
+        works: 3996,
+        advanced: 3995,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] },
+        keysExamined: 3995,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: '0CD95C3D7D30003104D13FE0880CD08BAE64AC0AB1931BF4AAB877A8FE0B2677',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 20000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015553, i: 5 }),
+    signature: {
+      hash: Binary.createFromBase64('ePq7qTE6FFIYeEa/A04moUr0BPg=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015553, i: 5 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.createIndex({price : 1})
+price_1
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.getIndexes()
+|
+[
+  { v: 2, key: { _id: 1 }, name: '_id_' },
+  { v: 2, key: { price: 1 }, name: 'price_1' },
+  { v: 2, key: { category: 1 }, name: 'category_1' },
+  { v: 2, key: { brand: 1 }, name: 'brand_1' },
+  { v: 2, key: { rating: -1 }, name: 'rating_-1' },
+  { v: 2, key: { category: 1, price: 1 }, name: 'category_1_price_1' },
+  { v: 2, key: { brand: 1, price: 1 }, name: 'brand_1_price_1' }
+]
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb> db.products.find( { price : {$gt : 20000} } ).explain("executionStats")
+{
+  explainVersion: '1',
+  queryPlanner: {
+    namespace: 'ecomdb.products',
+    parsedQuery: { price: { '$gt': 20000 } },
+    indexFilterSet: false,
+    queryHash: '8E1D451A',
+    planCacheShapeHash: '8E1D451A',
+    planCacheKey: '971972C5',
+    optimizationTimeMillis: 0,
+    maxIndexedOrSolutionsReached: false,
+    maxIndexedAndSolutionsReached: false,
+    maxScansToExplodeReached: false,
+    prunedSimilarIndexes: false,
+    winningPlan: {
+      isCached: false,
+      stage: 'FETCH',
+      inputStage: {
+        stage: 'IXSCAN',
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] }
+      }
+    },
+    rejectedPlans: []
+  },
+  executionStats: {
+    executionSuccess: true,
+    nReturned: 3995,
+    executionTimeMillis: 5,
+    totalKeysExamined: 3995,
+    totalDocsExamined: 3995,
+    executionStages: {
+      isCached: false,
+      stage: 'FETCH',
+      nReturned: 3995,
+      executionTimeMillisEstimate: 1,
+      works: 3996,
+      advanced: 3995,
+      needTime: 0,
+      needYield: 0,
+      saveState: 0,
+      restoreState: 0,
+      isEOF: 1,
+      docsExamined: 3995,
+      alreadyHasObj: 0,
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: 3995,
+        executionTimeMillisEstimate: 1,
+        works: 3996,
+        advanced: 3995,
+        needTime: 0,
+        needYield: 0,
+        saveState: 0,
+        restoreState: 0,
+        isEOF: 1,
+        keyPattern: { price: 1 },
+        indexName: 'price_1',
+        isMultiKey: false,
+        multiKeyPaths: { price: [] },
+        isUnique: false,
+        isSparse: false,
+        isPartial: false,
+        indexVersion: 2,
+        direction: 'forward',
+        indexBounds: { price: [ '(20000, inf.0]' ] },
+        keysExamined: 3995,
+        seeks: 1,
+        dupsTested: 0,
+        dupsDropped: 0
+      }
+    }
+  },
+  queryShapeHash: '0CD95C3D7D30003104D13FE0880CD08BAE64AC0AB1931BF4AAB877A8FE0B2677',
+  command: {
+    find: 'products',
+    filter: { price: { '$gt': 20000 } },
+    '$db': 'ecomdb'
+  },
+  serverInfo: {
+    host: 'ac-fc0kgv3-shard-00-01.xrs2dqk.mongodb.net',
+    port: 27017,
+    version: '8.0.32',
+    gitVersion: 'f9eb55a7cc900f33a722a5b32a0fdbf54385c749'
+  },
+  serverParameters: {
+    internalQueryFacetBufferSizeBytes: 104857600,
+    internalQueryFacetMaxOutputDocSizeBytes: 104857600,
+    internalLookupStageIntermediateDocumentMaxSizeBytes: 16793600,
+    internalDocumentSourceGroupMaxMemoryBytes: 104857600,
+    internalQueryMaxBlockingSortMemoryUsageBytes: 33554432,
+    internalQueryProhibitBlockingMergeOnMongoS: 0,
+    internalQueryMaxAddToSetBytes: 104857600,
+    internalDocumentSourceSetWindowFieldsMaxMemoryBytes: 104857600,
+    internalQueryFrameworkControl: 'trySbeRestricted',
+    internalQueryPlannerIgnoreIndexWithCollationForRegex: 1
+  },
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp({ t: 1789015588, i: 1 }),
+    signature: {
+      hash: Binary.createFromBase64('3TxGoCDxYMhX9bW+Okz+wZcx/7Q=', 0),
+      keyId: Long('7643119144769945606')
+    }
+  },
+  operationTime: Timestamp({ t: 1789015588, i: 1 })
+}
+Atlas atlas-xcy14h-shard-0 [primary] ecomdb>
