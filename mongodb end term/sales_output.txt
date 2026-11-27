@@ -1,0 +1,187 @@
+Output:
+true
+
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6b08fe1b72b0abfc3a312081'),
+    '1': ObjectId('6b08fe1b72b0abfc3a312082'),
+    '2': ObjectId('6b08fe1b72b0abfc3a312083'),
+    '3': ObjectId('6b08fe1b72b0abfc3a312084'),
+    '4': ObjectId('6b08fe1b72b0abfc3a312085'),
+    '5': ObjectId('6b08fe1b72b0abfc3a312086')
+  }
+}
+
+STEP 1: All Orders
+
+[
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312081'),
+    orderId: 1,
+    customer: 'Arun',
+    product: 'Laptop',
+    category: 'Electronics',
+    qty: 1,
+    price: 55000
+  },
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312082'),
+    orderId: 2,
+    customer: 'Divya',
+    product: 'Mouse',
+    category: 'Electronics',
+    qty: 2,
+    price: 500
+  },
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312083'),
+    orderId: 3,
+    customer: 'Arun',
+    product: 'Notebook',
+    category: 'Stationery',
+    qty: 20,
+    price: 10
+  },
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312084'),
+    orderId: 4,
+    customer: 'Meena',
+    product: 'Chair',
+    category: 'Furniture',
+    qty: 2,
+    price: 3500
+  },
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312085'),
+    orderId: 5,
+    customer: 'Divya',
+    product: 'Headphones',
+    category: 'Electronics',
+    qty: 1,
+    price: 1500
+  },
+  {
+    _id: ObjectId('6b08fe1b72b0abfc3a312086'),
+    orderId: 6,
+    customer: 'Karthik',
+    product: 'Pen',
+    category: 'Stationery',
+    qty: 10,
+    price: 40
+  }
+]
+
+
+
+STEP 2: Electronics
+
+[
+  {
+    orderId: 1,
+    product: 'Laptop'
+  },
+  {
+    orderId: 2,
+    product: 'Mouse'
+  },
+  {
+    orderId: 5,
+    product: 'Headphones'
+  }
+]
+
+
+
+STEP 3: Line Total
+
+[
+  {
+    orderId: 1,
+    customer: 'Arun',
+    lineTotal: 55000
+  },
+  {
+    orderId: 2,
+    customer: 'Divya',
+    lineTotal: 1000
+  },
+  {
+    orderId: 3,
+    customer: 'Arun',
+    lineTotal: 200
+  },
+  {
+    orderId: 4,
+    customer: 'Meena',
+    lineTotal: 7000
+  },
+  {
+    orderId: 5,
+    customer: 'Divya',
+    lineTotal: 1500
+  },
+  {
+    orderId: 6,
+    customer: 'Karthik',
+    lineTotal: 400
+  }
+]
+
+
+
+STEP 4: Total Quantity
+
+[
+  {
+    _id: 'Stationery',
+    totalQty: 30
+  },
+  {
+    _id: 'Electronics',
+    totalQty: 4
+  },
+  {
+    _id: 'Furniture',
+    totalQty: 2
+  }
+]
+
+
+
+STEP 5: Revenue and Average Price
+
+[
+  {
+    _id: 'Electronics',
+    revenue: 57500,
+    avgPrice: 19000
+  },
+  {
+    _id: 'Furniture',
+    revenue: 7000,
+    avgPrice: 3500
+  },
+  {
+    _id: 'Stationery',
+    revenue: 600,
+    avgPrice: 25
+  }
+]
+
+
+
+STEP 6: Top Two Customers
+
+[
+  {
+    _id: 'Arun',
+    spent: 55200
+  },
+  {
+    _id: 'Meena',
+    spent: 7000
+  }
+]
+Ready

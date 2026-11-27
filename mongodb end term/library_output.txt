@@ -1,0 +1,143 @@
+Output:
+true
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6b08fd42970bb06adf52ccb3'),
+    '1': ObjectId('6b08fd42970bb06adf52ccb4'),
+    '2': ObjectId('6b08fd42970bb06adf52ccb5'),
+    '3': ObjectId('6b08fd42970bb06adf52ccb6')
+  }
+}
+
+STEP 1: All Members
+
+[
+  {
+    _id: ObjectId('6b08fd42970bb06adf52ccb3'),
+    name: 'Ravi',
+    address: {
+      city: 'Chennai',
+      pin: '600001'
+    },
+    borrowed: [
+      'Python Basics',
+      'MongoDB Guide'
+    ],
+    fee: 0
+  },
+  {
+    _id: ObjectId('6b08fd42970bb06adf52ccb4'),
+    name: 'Kumar',
+    address: {
+      city: 'Chennai',
+      pin: '600028'
+    },
+    borrowed: [],
+    fee: 0
+  },
+  {
+    _id: ObjectId('6b08fd42970bb06adf52ccb5'),
+    name: 'Sita',
+    address: {
+      city: 'Bangalore',
+      pin: '560001'
+    },
+    borrowed: [
+      'MongoDB Guide'
+    ],
+    fee: 50
+  },
+  {
+    _id: ObjectId('6b08fd42970bb06adf52ccb6'),
+    name: 'Lakshmi',
+    address: {
+      city: 'Hyderabad',
+      pin: '500001'
+    },
+    borrowed: [
+      'Python Basics'
+    ],
+    fee: 120
+  }
+]
+
+
+STEP 2: Chennai Members
+
+[
+  {
+    name: 'Ravi',
+    address: {
+      city: 'Chennai',
+      pin: '600001'
+    }
+  },
+  {
+    name: 'Kumar',
+    address: {
+      city: 'Chennai',
+      pin: '600028'
+    }
+  }
+]
+
+
+STEP 3: MongoDB Guide
+
+[
+  {
+    name: 'Ravi',
+    borrowed: [
+      'Python Basics',
+      'MongoDB Guide'
+    ]
+  },
+  {
+    name: 'Sita',
+    borrowed: [
+      'MongoDB Guide'
+    ]
+  }
+]
+
+
+STEP 4: Both Books
+
+[
+  {
+    name: 'Ravi'
+  }
+]
+
+
+STEP 5: No Books
+
+[
+  {
+    name: 'Kumar'
+  }
+]
+
+
+STEP 6: Update Sita
+
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+
+STEP 7: Fee Count
+
+2
+
+
+Cleanup: Drop Collection
+
+true
+Ready
